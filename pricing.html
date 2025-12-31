@@ -1,456 +1,254 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Pricing | Enchanted Rose Photography</title>
-
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="./styles.css" />
 </head>
-
 <body>
-
-<header class="header">
-  <div class="container">
+  <header class="site-header">
     <nav class="nav">
-      <a class="brand" href="index.html">
-        <img class="logo-img" src="assets/img/logo-primary.png" alt="Enchanted Rose Photography">
-        <strong>Enchanted Rose</strong>
-      </a>
-
-      <div class="navlinks">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="contact.html">Contact</a>
+      <a class="brand" href="./index.html">Enchanted Rose</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <div class="nav-links" data-nav>
+        <a href="./portfolio.html">Portfolio</a>
+        <a class="active" href="./pricing.html">Pricing</a>
+        <a href="./contact.html" class="pill">Book</a>
       </div>
     </nav>
-  </div>
-</header>
+  </header>
 
-<section class="section">
-  <div class="container">
-
-    <h1>PHOTOGRAPHY PACKAGES & PRICING</h1>
-
-    <p class="form-note">
-      A <strong>30% non-refundable retainer</strong> is required to book.
-      Remaining balance is due on the session date.
-      <a href="policies.html">View policies</a>.
-    </p>
-
-    <!-- ================= WEDDINGS ================= -->
-    <h2>💍 Wedding Photography</h2>
-    <div class="pricing">
-
-      <div class="card">
-        <span class="badge">Intimate Ceremony</span>
-        <h3>Intimate Vows</h3>
-        <p class="price">$650</p>
-        <ul>
-          <li>Up to 1.5 hours of coverage</li>
-          <li>60+ professionally edited digital images</li>
-          <li>Online gallery for download</li>
-          <li>Print release</li>
-        </ul>
+  <main class="section">
+    <div class="container">
+      <div class="section-head">
+        <h1>Photography Packages & Pricing</h1>
+        <p class="muted">A 30% non-refundable retainer is required to book. Remaining balance is due on the session date. <a href="./policies.html">View policies</a>.</p>
       </div>
 
-      <div class="card">
-        <span class="badge">Most Popular</span>
-        <h3>Timeless Love</h3>
-        <p class="price">$1,300</p>
-        <ul>
-          <li>Up to 4 hours of coverage</li>
-          <li>200+ professionally edited digital images</li>
-          <li>Online gallery</li>
-          <li>Print release</li>
-          <li>Sneak peek within 72 hours</li>
-        </ul>
+      <div class="tabs" role="navigation" aria-label="Pricing sections">
+        <a href="#wedding" class="tab">Wedding</a>
+        <a href="#family" class="tab">Family</a>
+        <a href="#senior" class="tab">Senior</a>
+        <a href="#glamour" class="tab">Glamour</a>
+        <a href="#celebration" class="tab">Celebration</a>
+        <a href="#couples" class="tab">Couples</a>
+        <a href="#mini" class="tab">Mini</a>
+        <a href="#addons" class="tab">Add-ons</a>
+        <a href="#travel" class="tab">Travel</a>
       </div>
 
-      <div class="card">
-        <span class="badge">Full Story</span>
-        <h3>Enchanted Wedding Experience</h3>
-        <p class="price">$2,100</p>
-        <ul>
-          <li>Up to 7 hours of coverage</li>
-          <li>350+ professionally edited digital images</li>
-          <li>Engagement session included</li>
-          <li>Online gallery</li>
-          <li>Print release</li>
-          <li>Priority editing</li>
-        </ul>
-      </div>
+      <!-- Wedding -->
+      <section id="wedding" class="pricing-section">
+        <h2>Wedding Photography</h2>
+        <div class="grid-3">
+          <article class="price-card card">
+            <div class="pc-top">
+              <span class="badge">Intimate Ceremony</span>
+              <h3>Intimate Vows</h3>
+              <div class="price">$650</div>
+            </div>
+            <ul class="list">
+              <li>Up to 1.5 hours of coverage</li>
+              <li>60+ professionally edited digital images</li>
+              <li>Online gallery for download</li>
+              <li>Print release</li>
+            </ul>
+          </article>
 
-    </div>
+          <article class="price-card card glow">
+            <div class="pc-top">
+              <span class="badge strong">Most Popular</span>
+              <h3>Timeless Love</h3>
+              <div class="price">$1,300</div>
+            </div>
+            <ul class="list">
+              <li>Up to 4 hours of coverage</li>
+              <li>200+ professionally edited digital images</li>
+              <li>Online gallery</li>
+              <li>Print release</li>
+              <li>Sneak peek within 72 hours</li>
+            </ul>
+          </article>
 
-    <p class="form-note">➕ Additional wedding coverage: <strong>$200 per hour</strong></p>
+          <article class="price-card card">
+            <div class="pc-top">
+              <span class="badge">Full Story</span>
+              <h3>Enchanted Wedding Experience</h3>
+              <div class="price">$2,100</div>
+            </div>
+            <ul class="list">
+              <li>Up to 7 hours of coverage</li>
+              <li>350+ professionally edited digital images</li>
+              <li>Engagement session included</li>
+              <li>Online gallery</li>
+              <li>Print release</li>
+              <li>Priority editing</li>
+            </ul>
+          </article>
+        </div>
+        <p class="muted bump">➕ Additional wedding coverage: <strong>$200 per hour</strong></p>
+      </section>
 
-    <!-- ================= FAMILY ================= -->
-    <h2>👨‍👩‍👧 Family Portraits</h2>
-    <div class="pricing">
+      <!-- Family -->
+      <section id="family" class="pricing-section">
+        <h2>Family Portraits</h2>
+        <div class="grid-3">
+          <article class="price-card card">
+            <h3>Simple Moments</h3>
+            <div class="price">$175</div>
+            <ul class="list">
+              <li>25-minute session</li>
+              <li>One location</li>
+              <li>8 edited digital images</li>
+            </ul>
+          </article>
+          <article class="price-card card">
+            <h3>Family Story</h3>
+            <div class="price">$300</div>
+            <ul class="list">
+              <li>45-minute session</li>
+              <li>One location</li>
+              <li>20 edited digital images</li>
+            </ul>
+          </article>
+          <article class="price-card card">
+            <h3>Heirloom Family Session</h3>
+            <div class="price">$475</div>
+            <ul class="list">
+              <li>Up to 1.5 hours</li>
+              <li>Multiple groupings</li>
+              <li>40 edited digital images</li>
+              <li>Print release</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-      <div class="card">
-        <h3>Simple Moments</h3>
-        <p class="price">$175</p>
-        <ul>
-          <li>25-minute session</li>
-          <li>One location</li>
-          <li>8 edited digital images</li>
-        </ul>
-      </div>
+      <!-- Senior -->
+      <section id="senior" class="pricing-section">
+        <h2>Senior Portraits</h2>
+        <div class="grid-3">
+          <article class="price-card card">
+            <h3>Simply You</h3>
+            <div class="price">$175</div>
+            <ul class="list">
+              <li>30-minute session</li>
+              <li>One outfit</li>
+              <li>8 edited digital images</li>
+            </ul>
+          </article>
+          <article class="price-card card">
+            <h3>Golden Hour</h3>
+            <div class="price">$300</div>
+            <ul class="list">
+              <li>1 hour</li>
+              <li>Two outfits</li>
+              <li>20 edited digital images</li>
+            </ul>
+          </article>
+          <article class="price-card card">
+            <h3>Signature Senior</h3>
+            <div class="price">$475</div>
+            <ul class="list">
+              <li>1.5 hours</li>
+              <li>Three outfits</li>
+              <li>Two nearby locations</li>
+              <li>40 edited digital images</li>
+              <li>Print release</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-      <div class="card">
-        <h3>Family Story</h3>
-        <p class="price">$300</p>
-        <ul>
-          <li>45-minute session</li>
-          <li>One location</li>
-          <li>20 edited digital images</li>
-        </ul>
-      </div>
+      <!-- Glamour -->
+      <section id="glamour" class="pricing-section">
+        <h2>Glamour Portraits</h2>
+        <div class="grid-3">
+          <article class="price-card card">
+            <h3>Soft Glam</h3>
+            <div class="price">$225</div>
+            <ul class="list">
+              <li>45-minute session</li>
+              <li>One look</li>
+              <li>10 edited digital images</li>
+            </ul>
+          </article>
+          <article class="price-card card">
+            <h3>Bold Beauty</h3>
+            <div class="price">$400</div>
+            <ul class="list">
+              <li>1.5 hours</li>
+              <li>Two looks</li>
+              <li>25 edited digital images</li>
+            </ul>
+          </article>
+          <article class="price-card card">
+            <h3>Iconic Glam Experience</h3>
+            <div class="price">$600</div>
+            <ul class="list">
+              <li>Up to 2 hours</li>
+              <li>Unlimited outfit changes</li>
+              <li>45 edited digital images</li>
+              <li>Creative posing & lighting guidance</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-      <div class="card">
-        <h3>Heirloom Family Session</h3>
-        <p class="price">$475</p>
-        <ul>
-          <li>Up to 1.5 hours</li>
-          <li>Multiple groupings</li>
-          <li>40 edited digital images</li>
-          <li>Print release</li>
-        </ul>
-      </div>
+      <!-- Celebration -->
+      <section id="celebration" class="pricing-section">
+        <h2>Birthday • Anniversary • Celebration</h2>
+        <div class="grid-3">
+          <article class="price-card card">
+            <h3>Sweet & Simple</h3>
+            <div class="price">$200</div>
+            <ul class="list">
+              <li>30-minute session</li>
+              <li>12 edited digital images</li>
+            </ul>
+          </article>
+          <article class="price-card card">
+            <h3>Celebration Story</h3>
+            <div class="price">$350</div>
+            <ul class="list">
+              <li>1 hour</li>
+              <li>30 edited digital images</li>
+            </ul>
+          </article>
+          <article class="price-card card">
+            <h3>Milestone Experience</h3>
+            <div class="price">$550</div>
+            <ul class="list">
+              <li>Up to 2 hours</li>
+              <li>65+ edited digital images</li>
+            </ul>
+          </article>
+        </div>
+      </section>
 
-    </div>
-
-    <!-- ================= SENIORS ================= -->
-    <h2>🎓 Senior Portraits</h2>
-    <div class="pricing">
-
-      <div class="card">
-        <h3>Simply You</h3>
-        <p class="price">$175</p>
-        <ul>
-          <li>30-minute session</li>
-          <li>One outfit</li>
-          <li>8 edited digital images</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Golden Hour</h3>
-        <p class="price">$300</p>
-        <ul>
-          <li>1 hour</li>
-          <li>Two outfits</li>
-          <li>20 edited digital images</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Signature Senior</h3>
-        <p class="price">$475</p>
-        <ul>
-          <li>1.5 hours</li>
-          <li>Three outfits</li>
-          <li>Two nearby locations</li>
-          <li>40 edited digital images</li>
-          <li>Print release</li>
-        </ul>
-      </div>
-
-    </div>
-
-    <!-- ================= GLAMOUR SESSIONS ================= -->
-    <h2>💄 Glamour Portraits</h2>
-    <div class="pricing">
-
-      <div class="card">
-        <h3>Soft Glam</h3>
-        <p class="price">$225</p>
-        <ul>
-          <li>45-minute session</li>
-          <li>One look</li>
-          <li>10 edited digital images</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Bold Beauty</h3>
-        <p class="price">$400</p>
-        <ul>
-          <li>1.5 hours</li>
-          <li>Two looks</li>
-          <li>25 edited digital images</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Iconic Glam Experience</h3>
-        <p class="price">$600</p>
-        <ul>
-          <li>Up to 2 hours</li>
-          <li>Unlimited outfit changes</li>
-          <li>45 edited digital images</li>
-          <li>Creative posing & lighting guidance</li>
-        </ul>
-      </div>
-
-    </div>
-
-    <!-- ================= BIRTHDAY / CELEBRATIONS ================= -->
-    <h2>🎉 Birthday • Anniversary • Celebration</h2>
-    <div class="pricing">
-
-      <div class="card">
-        <h3>Sweet & Simple</h3>
-        <p class="price">$200</p>
-        <ul>
-          <li>30-minute session</li>
-          <li>12 edited digital images</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Celebration Story</h3>
-        <p class="price">$350</p>
-        <ul>
-          <li>1 hour</li>
-          <li>30 edited digital images</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Milestone Experience</h3>
-        <p class="price">$550</p>
-        <ul>
-          <li>Up to 2 hours</li>
-          <li>65+ edited digital images</li>
-        </ul>
-      </div>
-
-    </div>
-
-    <!-- ================= COUPLES / ENGAGEMENT ================= -->
-    <h2>💑 Couples • Engagement</h2>
-    <div class="pricing">
-
-      <div class="card">
-        <h3>Love Notes</h3>
-        <p class="price">$225</p>
-        <ul>
-          <li>30-minute session</li>
-          <li>12 edited digital images</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Forever Us</h3>
-        <p class="price">$400</p>
-        <ul>
-          <li>1 hour</li>
-          <li>Two outfits</li>
-          <li>30 edited digital images</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Engagement Experience</h3>
-        <p class="price">$575</p>
-        <ul>
-          <li>Up to 2 hours</li>
-          <li>Multiple locations</li>
-          <li>50 edited digital images</li>
-          <li>Print release</li>
-        </ul>
-      </div>
-
-    </div>
-
-    <!-- ================= MINI SESSIONS ================= -->
-    <h2>🌸 Mini Sessions</h2>
-    <div class="pricing">
-
-      <div class="card">
-        <span class="badge">Limited Availability</span>
-        <h3>Mini Session</h3>
-        <p class="price">$125</p>
-        <ul>
-          <li>20-minute session</li>
-          <li>One location</li>
-          <li>One outfit</li>
-          <li>5 professionally edited digital images</li>
-          <li>Online gallery</li>
-        </ul>
-        <p class="form-note">Ideal for seasonal or themed sessions.</p>
-      </div>
-
-    </div>
-
-    <!-- ================= ADD-ONS ================= -->
-    <h2>✨ Add-Ons & Upgrades</h2>
-    <p class="form-note">(Available for all applicable packages)</p>
-
-    <div class="pricing">
-
-      <div class="card">
-        <h3>Additional Digital Images</h3>
-        <p class="form-note">Perfect if you want more from your gallery.</p>
-        <ul>
-          <li>$15 per image</li>
-          <li>$65 for 5 images</li>
-          <li>$120 for 10 images</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Extra Time & Locations</h3>
-        <ul>
-          <li>Extra 30 minutes: $75</li>
-          <li>Extra 1 hour: $200</li>
-          <li>Additional location: $75</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Outfit Changes</h3>
-        <ul>
-          <li>Additional outfit: $30</li>
-          <li><em>Waived for packages with unlimited outfits</em></li>
-        </ul>
-      </div>
-
-    </div>
-
-    <div class="pricing">
-
-      <div class="card">
-        <h3>Extended Family / Extra Participants</h3>
-        <ul>
-          <li>Extended family grouping: $50</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Premium Editing</h3>
-        <ul>
-          <li>Advanced retouching: $10 per image</li>
-          <li>Black & white versions: Included upon request</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Black & White Versions</h3>
-        <p class="form-note">Included upon request for any applicable session.</p>
-        <ul>
-          <li>Included</li>
-        </ul>
-      </div>
-
-    </div>
-
-    <!-- ================= GLAMOUR EDITS (ADD-ON) ================= -->
-    <h2>🌙 Glamour / Fantasy Artistic Edits (Add-On)</h2>
-
-    <div class="pricing">
-
-      <div class="card">
-        <span class="badge">Add-On</span>
-        <h3>Glamour / Fantasy Artistic Edits</h3>
-        <p class="form-note"><em>Same exact style as Glamour Sessions</em></p>
-
-        <p>For clients who want the glamour look applied to photos from any other session:</p>
-        <ul>
-          <li>$25 per image</li>
-          <li>$125 for 5 images</li>
-          <li>$225 for 10 images</li>
-        </ul>
-
-        <p class="form-note">
-          Styles include: Fantasy • Fairytale • Sci-Fi • Dark Romance • Surreal • Otherworldly Artistic Edits
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>What is a Glamour Edit?</h3>
-        <p>
-          A glamour edit is an advanced, artistic editing style that goes beyond standard photo retouching.
-          These edits may include cinematic lighting, fantasy or fairytale elements, surreal effects,
-          dramatic tones, or otherworldly artistic enhancements.
-        </p>
-        <p>
-          Glamour Sessions automatically include this level of editing.
-          Glamour Edits can also be added to images from any other session for clients who want the same
-          artistic look without booking a full glamour shoot.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Want Something Custom?</h3>
-        <p>
-          If you have a specific vision — fantasy, dark romance, surreal, or themed —
-          tell me your concept and I’ll help plan the look.
-        </p>
-        <p style="margin-top:12px">
-          <a class="button primary" href="contact.html">Request a Quote</a>
-        </p>
-      </div>
-
-    </div>
-
-    <!-- ================= TRAVEL ================= -->
-    <h2>🚗 Travel</h2>
-    <div class="pricing">
-
-      <div class="card">
-        <h3>Travel Rates</h3>
-        <ul>
-          <li>Included within 30 miles</li>
-          <li>$0.75 per mile beyond</li>
-        </ul>
-      </div>
-
-      <div class="card">
-        <h3>Custom Locations</h3>
-        <p class="form-note">
-          Destination sessions and multi-location requests are welcome.
-          Travel fees will be quoted based on distance + time.
-        </p>
-      </div>
-
-      <div class="card">
-        <h3>Custom Packages Available</h3>
-        <p>
-          Multi-event coverage, themed shoots, blended sessions, or creative concepts —
-          custom packages are available upon request.
-        </p>
-      </div>
-
-    </div>
-
-    <div style="margin-top:18px">
-      <a class="button primary" href="contact.html">Check Availability</a>
-      <a class="button" href="portfolio.html" style="margin-left:10px">View Portfolio</a>
-    </div>
-
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container footer-grid">
-    <div>
-      <strong>Enchanted Rose Photography</strong>
-      <p>Linden, TN</p>
-    </div>
-
-    <div class="socials">
-      <a class="pill" href="portfolio.html">Portfolio</a>
-      <a class="pill" href="contact.html">Contact</a>
-    </div>
-  </div>
-</footer>
-
-<script src="assets/js/site.js"></script>
-</body>
-</html>
+      <!-- Couples -->
+      <section id="couples" class="pricing-section">
+        <h2>Couples • Engagement</h2>
+        <div class="grid-3">
+          <article class="price-card card">
+            <h3>Love Notes</h3>
+            <div class="price">$225</div>
+            <ul class="list">
+              <li>30-minute session</li>
+              <li>12 edited digital images</li>
+            </ul>
+          </article>
+          <article class="price-card card">
+            <h3>Forever Us</h3>
+            <div class="price">$400</div>
+            <ul class="list">
+              <li>1 hour</li>
+              <li>Two outfits</li>
+              <li>30 edited digital images</li>
+            </ul>
+          </article>
+          <article class="price-card card">
+            <h3>Engagement Experience</h3>
+            <div class="price">$575</div>
+            <
