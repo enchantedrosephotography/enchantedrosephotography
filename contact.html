@@ -49,74 +49,69 @@
 
   <div class="hero-spotlight-content container">
     <div class="hero-spotlight-card">
-      <h1>Let’s book your session</h1>
+      <h1>Let’s create something iconic</h1>
       <p>
-        Tell me your session type + date + location — I’ll reply within 24–48 hours.
-        If you’re not sure what to pick, I’ll guide you.
+        Tell me your session type, date, and vision.
+        I’ll reply within 24–48 hours.
       </p>
 
       <div class="cta-row" style="margin-top:18px">
         <a class="button" href="pricing.html">See Pricing</a>
-        <a class="button primary" href="#inquiry">Send an Inquiry</a>
+        <a class="button primary" href="#inquiry">Send Inquiry</a>
       </div>
     </div>
   </div>
 </section>
 
-<!-- ================= CONTACT CONTENT ================= -->
+<!-- ================= CONTACT FORM ================= -->
 <section class="section" id="inquiry">
   <div class="container">
 
     <div class="section-head">
       <h2>Inquiry Form</h2>
-      <p>Fill this out and I’ll get back to you as soon as possible.</p>
+      <p>Please fill out the form below and I’ll be in touch soon.</p>
     </div>
 
     <div class="feature-grid">
 
       <!-- FORM CARD -->
       <div class="card soft">
-        <h3>Send a message</h3>
-        <p class="muted">Booking requires a 30% non-refundable retainer. Remaining balance due on session date.</p>
 
         <form
           action="https://formspree.io/f/mdakogko"
           method="POST"
           class="contact-form"
         >
+
           <!-- Email subject -->
           <input type="hidden" name="_subject" value="New Inquiry — Enchanted Rose Photography">
 
-          <!-- Optional redirect (create thank-you.html if you use this) -->
-          <!--
-          <input type="hidden" name="_redirect" value="https://enchantedrosephotography.github.io/enchantedrosephotography/thank-you.html">
-          -->
-
+          <!-- NAME -->
           <label>
             Name
             <input type="text" name="name" required>
           </label>
 
+          <!-- EMAIL -->
           <label>
             Email
             <input type="email" name="email" required>
           </label>
-<label>
-  Phone Number
-  <input
-    type="tel"
-    name="phone"
-    placeholder="(555) 123-4567"
-  >
-</label>
 
+          <!-- PHONE (THIS IS THE IMPORTANT PART) -->
+          <label>
+            Phone Number
+            <input type="tel" name="phone" placeholder="(555) 123-4567">
+          </label>
+
+          <!-- SESSION TYPE -->
           <label>
             Session Type
             <select name="session_type" required>
-              <option value="" selected disabled>Select one</option>
+              <option value="" disabled selected>Select one</option>
               <option>Wedding</option>
               <option>Glamour</option>
-              <option>Portraits</option>
+              <option>Portrait</option>
               <option>Family</option>
               <option>Senior</option>
               <option>Couples</option>
@@ -126,27 +121,33 @@
             </select>
           </label>
 
+          <!-- DATE -->
           <label>
             Preferred Date
             <input type="date" name="date">
           </label>
 
+          <!-- LOCATION -->
           <label>
             Location / City
-            <input type="text" name="location" placeholder="Example: Linden, TN / Nashville / wherever you want to shoot">
+            <input type="text" name="location">
           </label>
 
+          <!-- MESSAGE -->
           <label>
-            Tell me your vibe
+            Message
             <textarea
               name="message"
               rows="6"
-              placeholder="Example: dark romance glamour, candlelit, moody and cinematic…"
+              placeholder="Tell me about your vision, vibe, or ideas..."
               required
             ></textarea>
           </label>
 
-          <button class="button primary" type="submit">Send Inquiry</button>
+          <button type="submit" class="button primary">
+            Send Inquiry
+          </button>
+
         </form>
       </div>
 
@@ -154,41 +155,19 @@
       <div class="card soft">
         <h3>What to include</h3>
         <ul>
-          <li><strong>Session type:</strong> glamour / wedding / couples / etc.</li>
-          <li><strong>Date:</strong> preferred date + backup date</li>
-          <li><strong>Location:</strong> city + indoor/outdoor vibe</li>
-          <li><strong>Inspo:</strong> dark romance, soft gothic, cinematic, etc.</li>
+          <li>Session type</li>
+          <li>Preferred date</li>
+          <li>Location or travel needs</li>
+          <li>Overall vibe or inspiration</li>
         </ul>
 
-        <div style="margin-top:14px">
+        <div style="margin-top:16px">
           <a class="pill" href="pricing.html">Pricing</a>
           <a class="pill" href="portfolio.html">Portfolio</a>
           <a class="pill" href="policies.html">Policies</a>
         </div>
-
-        <div class="banner card" style="margin-top:18px; padding:18px;">
-          <div>
-            <h3 style="margin-bottom:6px;">Social</h3>
-            <p style="margin-bottom:0;">Follow along for recent work + updates.</p>
-          </div>
-          <div class="cta-row" style="margin-top:12px">
-            <a class="button" href="https://www.facebook.com/profile.php?id=61585593907864" target="_blank" rel="noreferrer">Facebook</a>
-          </div>
-        </div>
       </div>
 
-    </div>
-
-    <!-- Bottom CTA -->
-    <div class="banner card soft bump">
-      <div>
-        <h2>Want help choosing a package?</h2>
-        <p>Tell me your vibe + budget and I’ll recommend the best fit.</p>
-      </div>
-      <div class="cta-row">
-        <a class="button primary" href="pricing.html">See Pricing</a>
-        <a class="button" href="portfolio.html">View Portfolio</a>
-      </div>
     </div>
 
   </div>
@@ -201,6 +180,7 @@
       <strong>Enchanted Rose Photography</strong>
       <p>Linden, TN • Moody • Romantic • Cinematic</p>
     </div>
+
     <div class="socials">
       <a class="pill" href="https://www.facebook.com/profile.php?id=61585593907864" target="_blank" rel="noreferrer">Facebook</a>
       <a class="pill" href="policies.html">Policies</a>
@@ -209,10 +189,9 @@
   </div>
 </footer>
 
-<!-- Floating Book Button (mobile) -->
+<!-- Floating Book Button -->
 <a class="fab-book" href="#inquiry">Book Now</a>
 
 <script src="assets/js/site.js"></script>
 </body>
 </html>
-
