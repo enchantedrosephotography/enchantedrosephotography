@@ -3,9 +3,12 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Contact | Enchanted Rose Photography</title>
 
-  <link rel="stylesheet" href="./assets/styles.css" />  
+  <title>Contact | Enchanted Rose Photography</title>
+  <meta name="description" content="Contact Enchanted Rose Photography to book your session or wedding.">
+
+  <link rel="icon" type="image/png" href="assets/img/logo-mark.png">
+  <link rel="stylesheet" href="assets/css/styles.css">
 </head>
 
 <body>
@@ -15,7 +18,10 @@
     <nav class="nav">
       <a class="brand" href="index.html">
         <img class="logo-img" src="assets/img/logo-primary.png" alt="Enchanted Rose Photography">
-        <strong>Enchanted Rose</strong>
+        <div>
+          <strong>Enchanted Rose</strong><br>
+          <small>Photography</small>
+        </div>
       </a>
 
       <div class="navlinks">
@@ -23,37 +29,42 @@
         <a href="about.html">About</a>
         <a href="portfolio.html">Portfolio</a>
         <a href="pricing.html">Pricing</a>
-        <a href="contact.html">Contact</a>
+        <a href="contact.html" aria-current="page">Contact</a>
+      </div>
+
+      <div class="nav-cta">
+        <a class="button primary" href="contact.html">Book</a>
       </div>
     </nav>
   </div>
 </header>
 
+<section class="hero-spotlight">
+  <img src="assets/img/hero-banner.jpg" alt="Contact hero" class="hero-spotlight-img">
+  <div class="hero-spotlight-overlay"></div>
+  <div class="hero-spotlight-content container">
+    <div class="hero-spotlight-card">
+      <h1>Let’s book your session</h1>
+      <p>Send your session type + date + location — I’ll reply within 24–48 hours.</p>
+      <div style="margin-top:18px">
+        <a class="button primary" href="pricing.html">See Pricing</a>
+        <a class="button" href="policies.html">Policies</a>
+      </div>
+    </div>
+  </div>
+</section>
+
 <section class="section">
   <div class="container">
 
-    <h1>Contact</h1>
-    <p class="form-note">
-      Ready to book or have questions? Send a message below and I’ll reply within 24–48 hours.
-    </p>
+    <div class="feature-grid">
 
-    <!-- Bubbly boxes layout (same style as pricing cards) -->
-    <div class="pricing">
+      <!-- Form card -->
+      <div class="card soft">
+        <h3>Inquiry Form</h3>
+        <p>Fill this out and I’ll get back to you as soon as possible.</p>
 
-      <!-- Contact Form Card -->
-      <div class="card">
-        <span class="badge">Inquiry Form</span>
-        <h3>Send an Inquiry</h3>
-
-        <form
-          class="form"
-          name="contact"
-          method="POST"
-          data-netlify="true"
-          action="/thank-you.html"
-        >
-          <input type="hidden" name="form-name" value="contact">
-
+        <form action="#" method="post" class="contact-form">
           <label>
             Name
             <input type="text" name="name" required>
@@ -66,83 +77,69 @@
 
           <label>
             Session Type
-            <select name="session" required>
-              <option value="">Select one</option>
+            <select name="type" required>
+              <option value="" selected disabled>Select one</option>
               <option>Wedding</option>
-              <option>Family</option>
-              <option>Senior</option>
               <option>Glamour</option>
-              <option>Couples / Engagement</option>
-              <option>Birthday / Anniversary</option>
+              <option>Portraits</option>
+              <option>Family</option>
+              <option>Couples</option>
+              <option>Senior</option>
+              <option>Milestone</option>
               <option>Mini Session</option>
-              <option>Custom Request</option>
             </select>
           </label>
 
           <label>
-            Preferred Date (optional)
-            <input type="text" name="date" placeholder="Example: March 15, 2026">
+            Preferred Date
+            <input type="date" name="date">
           </label>
 
           <label>
-            Message
-            <textarea name="message" required></textarea>
+            Location / City
+            <input type="text" name="location" placeholder="Where do you want to shoot?">
           </label>
 
-          <button class="button primary" type="submit">Send Message</button>
+          <label>
+            Tell me your vibe
+            <textarea name="message" rows="6" placeholder="Example: dark romance glamour, sunset field, moody and cinematic…"></textarea>
+          </label>
 
-          <p class="form-note">
-            A <strong>30% non-refundable retainer</strong> is required to book.
-            Remaining balance is due on the session date.
-            <a href="policies.html">View policies</a>.
-          </p>
+          <button class="button primary" type="submit">Send Inquiry</button>
         </form>
-      </div>
 
-      <!-- Contact Info Card -->
-      <div class="card">
-        <span class="badge">Details</span>
-        <h3>Contact Information</h3>
-
-        <p>
-          <strong>Email</strong><br>
-          enchantedrosephotography@gmail.com
-        </p>
-
-        <p>
-          <strong>Phone</strong><br>
-          <a href="tel:+12259646788">225-964-6788</a>
-        </p>
-
-        <p>
-          <strong>Location</strong><br>
-          Linden, Tennessee
-        </p>
-
-        <p>
-          <strong>Facebook</strong><br>
-          <a href="https://www.facebook.com/profile.php?id=61585593907864" target="_blank">
-            Enchanted Rose Photography
-          </a>
-        </p>
-
-        <p class="form-note">
-          Prefer messaging on Facebook? That works too.
+        <p style="margin-top:12px;">
+          Booking requires a <strong>30% non-refundable retainer</strong>. Remaining balance due on session date.
         </p>
       </div>
 
-      <!-- Optional third bubbly box (no prices) -->
-      <div class="card">
-        <span class="badge">What to Send</span>
-        <h3>Help Me Quote Fast</h3>
+      <!-- Info card -->
+      <div class="card soft">
+        <h3>Quick Info</h3>
         <ul>
-          <li>Session type + vibe</li>
-          <li>Date + location</li>
-          <li>How many people</li>
-          <li>Any inspiration (Pinterest/Facebook links)</li>
+          <li><strong>Location:</strong> Linden, TN</li>
+          <li><strong>Best categories:</strong> Glamour • Weddings</li>
+          <li><strong>Turnaround:</strong> Ask me for current delivery times</li>
         </ul>
+
+        <div style="margin-top:14px">
+          <a class="pill" href="https://www.facebook.com/profile.php?id=61585593907864" target="_blank" rel="noreferrer">Facebook</a>
+          <a class="pill" href="pricing.html">Pricing</a>
+          <a class="pill" href="policies.html">Policies</a>
+        </div>
       </div>
 
+    </div>
+
+    <div class="banner card soft bump">
+      <div>
+        <h2>Want help choosing a package?</h2>
+        <p>Tell me your session type + vibe and I’ll recommend the best fit.</p>
+      </div>
+      <div class="cta-row">
+        <a class="button primary" href="pricing.html">See Pricing</a>
+        <a class="button" href="portfolio.html">Portfolio</a>
+      </div>
     </div>
 
   </div>
@@ -152,18 +149,18 @@
   <div class="container footer-grid">
     <div>
       <strong>Enchanted Rose Photography</strong>
-      <p>Linden, TN</p>
+      <p>Linden, TN • Romantic • Cinematic • Timeless</p>
     </div>
-
     <div class="socials">
-      <a class="pill" href="portfolio.html">Portfolio</a>
-      <a class="pill" href="pricing.html">Pricing</a>
+      <a class="pill" href="https://www.facebook.com/profile.php?id=61585593907864" target="_blank" rel="noreferrer">Facebook</a>
+      <a class="pill" href="policies.html">Policies</a>
+      <a class="pill" href="contact.html">Contact</a>
     </div>
   </div>
 </footer>
 
+<a class="fab-book" href="contact.html">Book Now</a>
+
 <script src="assets/js/site.js"></script>
 </body>
 </html>
-
-
