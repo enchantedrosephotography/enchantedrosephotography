@@ -5,7 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1">
 
   <title>Contact | Enchanted Rose Photography</title>
-  <meta name="description" content="Contact Enchanted Rose Photography to book your session or wedding.">
+  <meta name="description" content="Contact Enchanted Rose Photography to book your session or wedding in Linden, TN.">
 
   <link rel="icon" type="image/png" href="assets/img/logo-mark.png">
   <link rel="stylesheet" href="assets/css/styles.css">
@@ -13,9 +13,11 @@
 
 <body>
 
+<!-- ================= HEADER ================= -->
 <header class="header">
   <div class="container">
     <nav class="nav">
+
       <a class="brand" href="index.html">
         <img class="logo-img" src="assets/img/logo-primary.png" alt="Enchanted Rose Photography">
         <div>
@@ -35,36 +37,61 @@
       <div class="nav-cta">
         <a class="button primary" href="contact.html">Book</a>
       </div>
+
     </nav>
   </div>
 </header>
 
+<!-- ================= HERO ================= -->
 <section class="hero-spotlight">
-  <img src="assets/img/hero-banner.jpg" alt="Contact hero" class="hero-spotlight-img">
+  <img src="assets/img/hero-banner.jpg" alt="Contact Enchanted Rose Photography" class="hero-spotlight-img">
   <div class="hero-spotlight-overlay"></div>
+
   <div class="hero-spotlight-content container">
     <div class="hero-spotlight-card">
       <h1>Let’s book your session</h1>
-      <p>Send your session type + date + location — I’ll reply within 24–48 hours.</p>
-      <div style="margin-top:18px">
-        <a class="button primary" href="pricing.html">See Pricing</a>
-        <a class="button" href="policies.html">Policies</a>
+      <p>
+        Tell me your session type + date + location — I’ll reply within 24–48 hours.
+        If you’re not sure what to pick, I’ll guide you.
+      </p>
+
+      <div class="cta-row" style="margin-top:18px">
+        <a class="button" href="pricing.html">See Pricing</a>
+        <a class="button primary" href="#inquiry">Send an Inquiry</a>
       </div>
     </div>
   </div>
 </section>
 
-<section class="section">
+<!-- ================= CONTACT CONTENT ================= -->
+<section class="section" id="inquiry">
   <div class="container">
+
+    <div class="section-head">
+      <h2>Inquiry Form</h2>
+      <p>Fill this out and I’ll get back to you as soon as possible.</p>
+    </div>
 
     <div class="feature-grid">
 
-      <!-- Form card -->
+      <!-- FORM CARD -->
       <div class="card soft">
-        <h3>Inquiry Form</h3>
-        <p>Fill this out and I’ll get back to you as soon as possible.</p>
+        <h3>Send a message</h3>
+        <p class="muted">Booking requires a 30% non-refundable retainer. Remaining balance due on session date.</p>
 
-        <form action="#" method="post" class="contact-form">
+        <form
+          action="https://formspree.io/f/mdakogko"
+          method="POST"
+          class="contact-form"
+        >
+          <!-- Email subject -->
+          <input type="hidden" name="_subject" value="New Inquiry — Enchanted Rose Photography">
+
+          <!-- Optional redirect (create thank-you.html if you use this) -->
+          <!--
+          <input type="hidden" name="_redirect" value="https://enchantedrosephotography.github.io/enchantedrosephotography/thank-you.html">
+          -->
+
           <label>
             Name
             <input type="text" name="name" required>
@@ -77,15 +104,16 @@
 
           <label>
             Session Type
-            <select name="type" required>
+            <select name="session_type" required>
               <option value="" selected disabled>Select one</option>
               <option>Wedding</option>
               <option>Glamour</option>
               <option>Portraits</option>
               <option>Family</option>
-              <option>Couples</option>
               <option>Senior</option>
-              <option>Milestone</option>
+              <option>Couples</option>
+              <option>Engagement</option>
+              <option>Milestone / Celebration</option>
               <option>Mini Session</option>
             </select>
           </label>
@@ -97,59 +125,73 @@
 
           <label>
             Location / City
-            <input type="text" name="location" placeholder="Where do you want to shoot?">
+            <input type="text" name="location" placeholder="Example: Linden, TN / Nashville / wherever you want to shoot">
           </label>
 
           <label>
             Tell me your vibe
-            <textarea name="message" rows="6" placeholder="Example: dark romance glamour, sunset field, moody and cinematic…"></textarea>
+            <textarea
+              name="message"
+              rows="6"
+              placeholder="Example: dark romance glamour, candlelit, moody and cinematic…"
+              required
+            ></textarea>
           </label>
 
           <button class="button primary" type="submit">Send Inquiry</button>
         </form>
-
-        <p style="margin-top:12px;">
-          Booking requires a <strong>30% non-refundable retainer</strong>. Remaining balance due on session date.
-        </p>
       </div>
 
-      <!-- Info card -->
+      <!-- INFO CARD -->
       <div class="card soft">
-        <h3>Quick Info</h3>
+        <h3>What to include</h3>
         <ul>
-          <li><strong>Location:</strong> Linden, TN</li>
-          <li><strong>Best categories:</strong> Glamour • Weddings</li>
-          <li><strong>Turnaround:</strong> Ask me for current delivery times</li>
+          <li><strong>Session type:</strong> glamour / wedding / couples / etc.</li>
+          <li><strong>Date:</strong> preferred date + backup date</li>
+          <li><strong>Location:</strong> city + indoor/outdoor vibe</li>
+          <li><strong>Inspo:</strong> dark romance, soft gothic, cinematic, etc.</li>
         </ul>
 
         <div style="margin-top:14px">
-          <a class="pill" href="https://www.facebook.com/profile.php?id=61585593907864" target="_blank" rel="noreferrer">Facebook</a>
           <a class="pill" href="pricing.html">Pricing</a>
+          <a class="pill" href="portfolio.html">Portfolio</a>
           <a class="pill" href="policies.html">Policies</a>
+        </div>
+
+        <div class="banner card" style="margin-top:18px; padding:18px;">
+          <div>
+            <h3 style="margin-bottom:6px;">Social</h3>
+            <p style="margin-bottom:0;">Follow along for recent work + updates.</p>
+          </div>
+          <div class="cta-row" style="margin-top:12px">
+            <a class="button" href="https://www.facebook.com/profile.php?id=61585593907864" target="_blank" rel="noreferrer">Facebook</a>
+          </div>
         </div>
       </div>
 
     </div>
 
+    <!-- Bottom CTA -->
     <div class="banner card soft bump">
       <div>
         <h2>Want help choosing a package?</h2>
-        <p>Tell me your session type + vibe and I’ll recommend the best fit.</p>
+        <p>Tell me your vibe + budget and I’ll recommend the best fit.</p>
       </div>
       <div class="cta-row">
         <a class="button primary" href="pricing.html">See Pricing</a>
-        <a class="button" href="portfolio.html">Portfolio</a>
+        <a class="button" href="portfolio.html">View Portfolio</a>
       </div>
     </div>
 
   </div>
 </section>
 
+<!-- ================= FOOTER ================= -->
 <footer class="footer">
   <div class="container footer-grid">
     <div>
       <strong>Enchanted Rose Photography</strong>
-      <p>Linden, TN • Romantic • Cinematic • Timeless</p>
+      <p>Linden, TN • Moody • Romantic • Cinematic</p>
     </div>
     <div class="socials">
       <a class="pill" href="https://www.facebook.com/profile.php?id=61585593907864" target="_blank" rel="noreferrer">Facebook</a>
@@ -159,7 +201,8 @@
   </div>
 </footer>
 
-<a class="fab-book" href="contact.html">Book Now</a>
+<!-- Floating Book Button (mobile) -->
+<a class="fab-book" href="#inquiry">Book Now</a>
 
 <script src="assets/js/site.js"></script>
 </body>
