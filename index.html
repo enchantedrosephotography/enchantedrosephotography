@@ -1,130 +1,120 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Enchanted Rose Photography | Linden, TN</title>
-
-  <link rel="icon" type="image/png" href="assets/img/logo-mark.png">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta name="description" content="Romantic, cinematic, timeless photography in Linden, TN. Weddings, glamour, portraits, couples, milestones." />
+  <link rel="stylesheet" href="./styles.css" />
 </head>
-
 <body>
-
-<!-- ================= HEADER ================= -->
-<header class="header">
-  <div class="container">
+  <header class="site-header">
     <nav class="nav">
-
-      <a class="brand" href="index.html">
-        <img class="logo-img" src="assets/img/logo-primary.png" alt="Enchanted Rose Photography">
-        <div>
-          <strong>Enchanted Rose</strong><br>
-          <small>Photography</small>
-        </div>
-      </a>
-
-      <div class="navlinks">
-        <a href="index.html">Home</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="contact.html">Contact</a>
+      <a class="brand" href="./index.html">Enchanted Rose</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <div class="nav-links" data-nav>
+        <a href="./portfolio.html">Portfolio</a>
+        <a href="./pricing.html">Pricing</a>
+        <a href="./contact.html" class="pill">Book</a>
       </div>
-
-      <div class="nav-cta">
-        <a class="button primary" href="contact.html">Book</a>
-      </div>
-
     </nav>
-  </div>
-</header>
+  </header>
 
-<!-- ================= HERO ================= -->
-<section class="hero-spotlight">
-  <img
-    src="assets/img/hero-banner.jpg"
-    alt="Enchanted Rose Photography cinematic work"
-    class="hero-spotlight-img"
-  >
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">Linden, TN • Romantic • Cinematic • Timeless</p>
+          <h1>Timeless photography with a touch of magic</h1>
+          <p class="lede">Weddings • Portraits • Glamour • Couples • Milestones</p>
 
-  <div class="hero-spotlight-overlay"></div>
+          <div class="cta-row">
+            <a class="btn primary" href="./contact.html">Check Availability</a>
+            <a class="btn" href="./pricing.html">View Pricing</a>
+          </div>
 
-  <div class="hero-spotlight-content container">
-    <div class="hero-spotlight-card">
-      <h1>Timeless photography with a touch of magic</h1>
-      <p>Weddings • Portraits • Glamour • Couples • Milestones</p>
+          <div class="mini-note card soft">
+            <strong>Fast booking note:</strong> A 30% non-refundable retainer is required to book. Remaining balance is due on the session date.
+            <a href="./policies.html">View policies</a>.
+          </div>
+        </div>
 
-      <div style="margin-top:18px">
-        <a class="button primary" href="contact.html">Check Availability</a>
-        <a class="button" href="pricing.html">View Pricing</a>
+        <div class="hero-card card">
+          <div class="hero-photo" aria-label="Featured work image"></div>
+          <div class="hero-card-body">
+            <h3>Featured Categories</h3>
+            <div class="chips">
+              <a class="chip" href="./portfolio.html#glamour">Glamour</a>
+              <a class="chip" href="./portfolio.html#weddings">Weddings</a>
+              <a class="chip" href="./portfolio.html#portraits">Portraits</a>
+              <a class="chip" href="./portfolio.html#couples">Couples</a>
+              <a class="chip" href="./portfolio.html#milestones">Milestones</a>
+            </div>
+            <p class="muted">Your strongest: <strong>Glamour</strong>, then <strong>Weddings</strong>.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>How you want to feel in your photos</h2>
+          <p class="muted">Pick a vibe. We’ll build the session around it.</p>
+        </div>
+
+        <div class="grid-3">
+          <a class="card link-card" href="./pricing.html#wedding">
+            <h3>Weddings</h3>
+            <p>From intimate vows to full wedding day storytelling.</p>
+            <span class="link">See packages →</span>
+          </a>
+
+          <a class="card link-card" href="./pricing.html#portraits">
+            <h3>Portraits</h3>
+            <p>Families • Seniors • Glamour sessions.</p>
+            <span class="link">See packages →</span>
+          </a>
+
+          <a class="card link-card" href="./pricing.html#couples">
+            <h3>Couples & Milestones</h3>
+            <p>Engagements, anniversaries, and celebrations.</p>
+            <span class="link">See packages →</span>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section alt">
+      <div class="container">
+        <div class="banner card">
+          <div>
+            <h2>Ready to book?</h2>
+            <p class="muted">Send your session type + date + location and I’ll reply within 24–48 hours.</p>
+          </div>
+          <div class="cta-row">
+            <a class="btn primary" href="./contact.html">Book Now</a>
+            <a class="btn" href="./portfolio.html">View Portfolio</a>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container foot">
+      <div>
+        <strong>Enchanted Rose Photography</strong>
+        <div class="muted">Linden, TN</div>
+      </div>
+      <div class="foot-links">
+        <a href="https://www.facebook.com/enchantedrosephotography/" target="_blank" rel="noreferrer">Facebook</a>
+        <a href="./policies.html">Policies</a>
+        <a href="./contact.html">Contact</a>
       </div>
     </div>
-  </div>
-</section>
+  </footer>
 
-<!-- ================= FEATURE SECTIONS ================= -->
-<section class="section">
-  <div class="container">
-
-    <div class="feature-grid">
-
-      <!-- Weddings -->
-      <a class="feature-card" href="pricing.html">
-        <img src="assets/img/p1.jpg" alt="Wedding photography">
-        <div class="feature-overlay"></div>
-        <div class="feature-content">
-          <h3>Weddings</h3>
-          <p>From intimate vows to full wedding day storytelling.</p>
-        </div>
-      </a>
-
-      <!-- Portraits -->
-      <a class="feature-card" href="pricing.html">
-        <img src="assets/img/p2.jpg" alt="Portrait photography">
-        <div class="feature-overlay"></div>
-        <div class="feature-content">
-          <h3>Portraits</h3>
-          <p>Families • Seniors • Glamour sessions.</p>
-        </div>
-      </a>
-
-      <!-- Couples -->
-      <a class="feature-card" href="pricing.html">
-        <img src="assets/img/p3.jpg" alt="Couples and milestone sessions">
-        <div class="feature-overlay"></div>
-        <div class="feature-content">
-          <h3>Couples & Milestones</h3>
-          <p>Engagements, anniversaries, and celebrations.</p>
-        </div>
-      </a>
-
-    </div>
-
-  </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-  <div class="container footer-grid">
-
-    <div>
-      <strong>Enchanted Rose Photography</strong>
-      <p>Linden, TN • Romantic • Cinematic • Timeless</p>
-    </div>
-
-    <div class="socials">
-      <a class="pill" href="https://www.facebook.com/profile.php?id=61585593907864" target="_blank">Facebook</a>
-      <a class="pill" href="policies.html">Policies</a>
-      <a class="pill" href="contact.html">Contact</a>
-    </div>
-
-  </div>
-</footer>
-
-<!-- Floating Book Button (mobile) -->
-<a class="fab-book" href="contact.html">Book Now</a>
-
-<script src="assets/js/site.js"></script>
+  <script src="./script.js"></script>
 </body>
 </html>
