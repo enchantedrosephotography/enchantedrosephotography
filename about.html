@@ -1,176 +1,91 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>About | Enchanted Rose Photography</title>
-
-  <link rel="icon" type="image/png" href="assets/img/logo-mark.png">
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <meta name="description" content="Meet the photographer behind Enchanted Rose Photography. Romantic, cinematic, timeless photography in Linden, TN." />
+  <link rel="stylesheet" href="./styles.css" />
 </head>
-
 <body>
-
-<!-- ================= HEADER ================= -->
-<header class="header">
-  <div class="container">
+  <header class="site-header">
     <nav class="nav">
-
-      <a class="brand" href="index.html">
-        <img class="logo-img" src="assets/img/logo-primary.png" alt="Enchanted Rose Photography">
-        <div>
-          <strong>Enchanted Rose</strong><br>
-          <small>Photography</small>
-        </div>
-      </a>
-
-      <div class="navlinks">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="contact.html">Contact</a>
+      <a class="brand" href="./index.html">Enchanted Rose</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <div class="nav-links" data-nav>
+        <a href="./portfolio.html">Portfolio</a>
+        <a href="./pricing.html">Pricing</a>
+        <a class="active" href="./about.html">About</a>
+        <a href="./contact.html" class="pill">Book</a>
       </div>
-
-      <div class="nav-cta">
-        <a class="button primary" href="contact.html">Book</a>
-      </div>
-
     </nav>
-  </div>
-</header>
+  </header>
 
-<!-- ================= HERO ================= -->
-<section class="hero-spotlight">
-  <img
-    src="assets/img/about-hero.jpg"
-    alt="About Enchanted Rose Photography"
-    class="hero-spotlight-img"
-  >
+  <main>
+    <section class="hero hero-tight">
+      <div class="container hero-grid">
+        <div>
+          <p class="eyebrow">About</p>
+          <h1>Hi — I’m the artist behind Enchanted Rose.</h1>
+          <p class="lede">
+            I photograph people in a way that feels romantic, cinematic, and timeless — with just enough magic
+            to feel like a fairytale, without losing what’s real.
+          </p>
+          <div class="cta-row">
+            <a class="btn primary" href="./contact.html">Check Availability</a>
+            <a class="btn" href="./portfolio.html">View Portfolio</a>
+          </div>
+        </div>
 
-  <div class="hero-spotlight-overlay"></div>
-
-  <div class="hero-spotlight-content container">
-    <div class="hero-spotlight-card">
-      <h1>Behind the Lens</h1>
-      <p>Where emotion, storytelling, and artistry meet.</p>
-    </div>
-  </div>
-</section>
-
-<!-- ================= ABOUT CONTENT ================= -->
-<section class="section">
-  <div class="container">
-
-    <div class="card" style="max-width:900px;margin:0 auto">
-
-      <p>
-        Hi, I’m the heart behind <strong>Enchanted Rose Photography</strong>.
-        I believe photographs should feel something — not just document a moment,
-        but preserve emotion, connection, and atmosphere.
-      </p>
-
-      <p>
-        My style is romantic, cinematic, and intentionally guided.
-        Whether I’m photographing a wedding day, a glamour session,
-        or a quiet family moment, my goal is always the same:
-        to create images that feel timeless and deeply personal.
-      </p>
-
-      <p>
-        I specialize in helping clients feel comfortable and confident
-        in front of the camera. You don’t need to know how to pose —
-        I’ll guide you every step of the way with care and intention.
-      </p>
-
-      <p>
-        Based in <strong>Linden, Tennessee</strong>, I proudly serve surrounding
-        areas and love traveling for meaningful stories.
-        Every session is approached with artistry, patience,
-        and respect for your vision.
-      </p>
-
-    </div>
-
-  </div>
-</section>
-
-<!-- ================= VALUES ================= -->
-<section class="section">
-  <div class="container">
-
-    <div class="grid-3">
-
-      <div class="card">
-        <h3>Intentional Storytelling</h3>
-        <p>
-          Your images are crafted with purpose — not rushed,
-          not generic, and never cookie-cutter.
-        </p>
+        <!-- HERO IMAGE -->
+        <div class="about-hero card bubble">
+          <div class="about-hero-img" aria-label="About hero image"></div>
+          <div class="about-hero-caption">
+            <strong>Based in:</strong> Linden, TN
+            <span class="dot">•</span>
+            <strong>Best known for:</strong> Glamour & Weddings
+          </div>
+        </div>
       </div>
+    </section>
 
-      <div class="card">
-        <h3>Guided & Comfortable</h3>
-        <p>
-          I guide you naturally so you never feel awkward or unsure
-          in front of the camera.
-        </p>
+    <section class="section">
+      <div class="container">
+        <div class="grid-2">
+          <article class="card bubble">
+            <h2>My style</h2>
+            <p class="muted">
+              Romantic tones, soft highlights, rich shadows, and a polished finish. Whether we’re shooting glamour or a wedding day,
+              my goal is the same: make you look incredible and feel like yourself.
+            </p>
+            <ul class="list">
+              <li>Guided posing (no awkward hands)</li>
+              <li>Calm, confident direction</li>
+              <li>Editing that stays timeless</li>
+            </ul>
+          </article>
+
+          <article class="card bubble">
+            <h2>What you can expect</h2>
+            <p class="muted">
+              You show up, I’ll handle the rest. I help you choose a vibe, pick locations, plan outfits, and I’ll guide you through the session.
+            </p>
+            <ul class="list">
+              <li>Clear communication + quick planning</li>
+              <li>Online gallery delivery</li>
+              <li>Print release included</li>
+            </ul>
+          </article>
+        </div>
+
+        <div class="banner card bubble soft bump">
+          <div>
+            <h2>Let’s create something iconic.</h2>
+            <p class="muted">Tell me your session type + date + location — I’ll reply within 24–48 hours.</p>
+          </div>
+          <div class="cta-row">
+            <a class="btn primary" href="./contact.html">Book Now</a>
+            <a class="btn" href="./pricing.html">See Pricing</a>
+          </div>
+        </div>
       </div>
-
-      <div class="card">
-        <h3>Artistic Editing</h3>
-        <p>
-          Every image is finished with a signature editing style
-          that enhances mood, light, and emotion.
-        </p>
-      </div>
-
-    </div>
-
-  </div>
-</section>
-
-<!-- ================= CTA ================= -->
-<section class="section">
-  <div class="container">
-
-    <div class="card" style="text-align:center;max-width:720px;margin:0 auto">
-      <h2>Let’s Create Something Beautiful</h2>
-      <p>
-        If you’re drawn to romantic, cinematic imagery
-        and a calm, guided experience — I’d love to work with you.
-      </p>
-
-      <div style="margin-top:18px">
-        <a class="button primary" href="contact.html">Start Your Booking</a>
-        <a class="button" href="portfolio.html">View Portfolio</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<!-- ================= FOOTER ================= -->
-<footer class="footer">
-  <div class="container footer-grid">
-
-    <div>
-      <strong>Enchanted Rose Photography</strong>
-      <p>Linden, TN • Romantic • Cinematic • Timeless</p>
-    </div>
-
-    <div class="socials">
-      <a class="pill" href="https://www.facebook.com/profile.php?id=61585593907864" target="_blank">Facebook</a>
-      <a class="pill" href="policies.html">Policies</a>
-      <a class="pill" href="contact.html">Contact</a>
-    </div>
-
-  </div>
-</footer>
-
-<a class="fab-book" href="contact.html">Book Now</a>
-
-<script src="assets/js/site.js"></script>
-</body>
-</html>
