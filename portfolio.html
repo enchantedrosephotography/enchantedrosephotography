@@ -1,176 +1,99 @@
 <!doctype html>
 <html lang="en">
 <head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Portfolio | Enchanted Rose Photography</title>
-
-  <link rel="stylesheet" href="assets/css/styles.css">
+  <link rel="stylesheet" href="./styles.css" />
 </head>
-
 <body>
-
-<header class="header">
-  <div class="container">
+  <header class="site-header">
     <nav class="nav">
-      <a class="brand" href="index.html">
-        <img class="logo-img" src="assets/img/logo-primary.png" alt="Enchanted Rose Photography">
-        <strong>Enchanted Rose</strong>
-      </a>
-
-      <div class="navlinks">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="portfolio.html">Portfolio</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="contact.html">Contact</a>
+      <a class="brand" href="./index.html">Enchanted Rose</a>
+      <button class="nav-toggle" aria-label="Open menu" aria-expanded="false">☰</button>
+      <div class="nav-links" data-nav>
+        <a class="active" href="./portfolio.html">Portfolio</a>
+        <a href="./pricing.html">Pricing</a>
+        <a href="./contact.html" class="pill">Book</a>
       </div>
     </nav>
-  </div>
-</header>
+  </header>
 
-<section class="section">
-  <div class="container">
+  <main class="section">
+    <div class="container">
+      <div class="section-head">
+        <h1>Portfolio</h1>
+        <p class="muted">Click a category. Then we’ll swap in your images + galleries.</p>
+      </div>
 
-    <h1>Portfolio</h1>
-    <div class="btn-row" style="margin-top:14px">
-  <a class="button primary" href="contact.html">Check Availability</a>
-  <a class="button" href="pricing.html">View Pricing</a>
-</div>
+      <div class="grid-3">
+        <section id="glamour" class="card">
+          <h2>Glamour</h2>
+          <p class="muted">Fantasy • Fairytale • Dark Romance • Surreal • Otherworldly</p>
+          <div class="placeholder-grid">
+            <div class="ph"></div><div class="ph"></div><div class="ph"></div><div class="ph"></div><div class="ph"></div><div class="ph"></div>
+          </div>
+        </section>
 
-    <!-- Featured / Intro Card (bubbly box vibe) -->
-    <div class="pricing" style="margin-top:18px">
-      <div class="card">
-        <span class="badge">Featured</span>
-        <h2 style="margin-top:10px">Weddings • Portraits • Glamour • Couples • Milestones</h2>
-        <p style="margin-top:8px">
-          If you love this style, tell me your date + location and I’ll recommend the best package.
-        </p>
-  <div class="btn-row" style="margin-top:14px">
-  <a class="button primary" href="contact.html">Check Availability</a>
-  <a class="button" href="pricing.html">View Pricing</a>
-</div>
+        <section id="weddings" class="card">
+          <h2>Weddings</h2>
+          <p class="muted">Intimate vows to full-day storytelling.</p>
+          <div class="placeholder-grid">
+            <div class="ph"></div><div class="ph"></div><div class="ph"></div><div class="ph"></div><div class="ph"></div><div class="ph"></div>
+          </div>
+        </section>
+
+        <section id="portraits" class="card">
+          <h2>Portraits</h2>
+          <p class="muted">Families • Seniors • Lifestyle.</p>
+          <div class="placeholder-grid">
+            <div class="ph"></div><div class="ph"></div><div class="ph"></div><div class="ph"></div><div class="ph"></div><div class="ph"></div>
+          </div>
+        </section>
+
+        <section id="couples" class="card">
+          <h2>Couples</h2>
+          <p class="muted">Engagements • anniversaries • just because.</p>
+          <div class="placeholder-grid">
+            <div class="ph"></div><div class="ph"></div><div class="ph"></div><div class="ph"></div><div class="ph"></div><div class="ph"></div>
+          </div>
+        </section>
+
+        <section id="milestones" class="card">
+          <h2>Milestones</h2>
+          <p class="muted">Birthdays • celebrations • memories.</p>
+          <div class="placeholder-grid">
+            <div class="ph"></div><div class="ph"></div><div class="ph"></div><div class="ph"></div><div class="ph"></div><div class="ph"></div>
+          </div>
+        </section>
+
+        <aside class="card soft">
+          <h2>Next step</h2>
+          <p class="muted">Tell me how you want portfolio galleries to work:</p>
+          <ul class="list">
+            <li>Simple: category page with a grid</li>
+            <li>Better: click thumbnail → full-screen lightbox</li>
+            <li>Best: separate gallery pages per shoot</li>
+          </ul>
+          <a class="btn primary" href="./contact.html">Book / Ask a question</a>
+        </aside>
       </div>
     </div>
+  </main>
 
-    <!-- Gallery (bubbly image cards) -->
-    <div class="portfolio-grid" style="margin-top:18px">
-
-      <!-- Replace p1–p12 with YOUR best photos. Keep them consistent (same vibe). -->
-      <button class="portfolio-card" type="button" data-full="assets/img/p1.jpg" aria-label="Open image 1">
-        <img src="assets/img/p1.jpg" alt="Portfolio photo 1">
-      </button>
-
-      <button class="portfolio-card" type="button" data-full="assets/img/p2.jpg" aria-label="Open image 2">
-        <img src="assets/img/p2.jpg" alt="Portfolio photo 2">
-      </button>
-
-      <button class="portfolio-card" type="button" data-full="assets/img/p3.jpg" aria-label="Open image 3">
-        <img src="assets/img/p3.jpg" alt="Portfolio photo 3">
-      </button>
-
-      <button class="portfolio-card" type="button" data-full="assets/img/p4.jpg" aria-label="Open image 4">
-        <img src="assets/img/p4.jpg" alt="Portfolio photo 4">
-      </button>
-
-      <button class="portfolio-card" type="button" data-full="assets/img/p5.jpg" aria-label="Open image 5">
-        <img src="assets/img/p5.jpg" alt="Portfolio photo 5">
-      </button>
-
-      <button class="portfolio-card" type="button" data-full="assets/img/p6.jpg" aria-label="Open image 6">
-        <img src="assets/img/p6.jpg" alt="Portfolio photo 6">
-      </button>
-
-      <button class="portfolio-card" type="button" data-full="assets/img/p7.jpg" aria-label="Open image 7">
-        <img src="assets/img/p7.jpg" alt="Portfolio photo 7">
-      </button>
-
-      <button class="portfolio-card" type="button" data-full="assets/img/p8.jpg" aria-label="Open image 8">
-        <img src="assets/img/p8.jpg" alt="Portfolio photo 8">
-      </button>
-
-      <!-- OPTIONAL extras (only if you have them) -->
-      <button class="portfolio-card" type="button" data-full="assets/img/p9.jpg" aria-label="Open image 9">
-        <img src="assets/img/p9.jpg" alt="Portfolio photo 9">
-      </button>
-
-      <button class="portfolio-card" type="button" data-full="assets/img/p10.jpg" aria-label="Open image 10">
-        <img src="assets/img/p10.jpg" alt="Portfolio photo 10">
-      </button>
-
-      <button class="portfolio-card" type="button" data-full="assets/img/p11.jpg" aria-label="Open image 11">
-        <img src="assets/img/p11.jpg" alt="Portfolio photo 11">
-      </button>
-
-      <button class="portfolio-card" type="button" data-full="assets/img/p12.jpg" aria-label="Open image 12">
-        <img src="assets/img/p12.jpg" alt="Portfolio photo 12">
-      </button>
-
+  <footer class="site-footer">
+    <div class="container foot">
+      <div>
+        <strong>Enchanted Rose Photography</strong>
+        <div class="muted">Linden, TN</div>
+      </div>
+      <div class="foot-links">
+        <a href="./pricing.html">Pricing</a>
+        <a href="./contact.html">Contact</a>
+      </div>
     </div>
+  </footer>
 
-  </div>
-</section>
-
-<!-- Lightbox -->
-<div class="lightbox" aria-hidden="true">
-  <div class="lightbox-inner" role="dialog" aria-modal="true" aria-label="Image preview">
-    <div class="lightbox-top">
-      <strong>Preview</strong>
-      <button class="pill" type="button" data-lightbox-close>Close</button>
-    </div>
-    <img class="lightbox-img" alt="">
-  </div>
-</div>
-
-<footer class="footer">
-  <div class="container footer-grid">
-    <div>
-      <strong>Enchanted Rose Photography</strong>
-      <p>Linden, TN</p>
-    </div>
-
-    <div class="socials">
-      <a class="pill" href="pricing.html">Pricing</a>
-      <a class="pill" href="contact.html">Contact</a>
-    </div>
-  </div>
-</footer>
-
-<script src="assets/js/site.js"></script>
-
-<!-- Lightbox JS (kept inside this page so it won't mess up anything else) -->
-<script>
-  (function(){
-    const lb = document.querySelector(".lightbox");
-    const lbImg = document.querySelector(".lightbox-img");
-    const closeBtn = document.querySelector("[data-lightbox-close]");
-
-    function openLB(src){
-      if(!lb || !lbImg) return;
-      lbImg.src = src;
-      lb.classList.add("open");
-      lb.setAttribute("aria-hidden","false");
-      document.body.style.overflow="hidden";
-    }
-
-    function closeLB(){
-      if(!lb || !lbImg) return;
-      lb.classList.remove("open");
-      lb.setAttribute("aria-hidden","true");
-      lbImg.src = "";
-      document.body.style.overflow="";
-    }
-
-    document.querySelectorAll(".portfolio-card").forEach(btn=>{
-      btn.addEventListener("click", ()=> openLB(btn.getAttribute("data-full")));
-    });
-
-    closeBtn && closeBtn.addEventListener("click", closeLB);
-    lb && lb.addEventListener("click", (e)=>{ if(e.target === lb) closeLB(); });
-    window.addEventListener("keydown", (e)=>{ if(e.key === "Escape") closeLB(); });
-  })();
-</script>
-
+  <script src="./script.js"></script>
 </body>
 </html>
-
