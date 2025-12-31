@@ -3,7 +3,7 @@
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Pricing | Enchanted Rose Photography</title>
+  <title>Contact | Enchanted Rose Photography</title>
 
   <link rel="stylesheet" href="assets/css/styles.css">
 </head>
@@ -32,43 +32,136 @@
 <section class="section">
   <div class="container">
 
-    <h1>Photography Packages & Pricing</h1>
-
+    <h1>Contact</h1>
     <p class="form-note">
-      A <strong>30% non-refundable retainer</strong> is required to book.
-      Remaining balance is due on the session date.
-      <a href="policies.html">View policies</a>.
+      Ready to book or have questions? Send a message below and I’ll reply within 24–48 hours.
     </p>
 
-    <!-- ================= WEDDINGS ================= -->
-    <h2>💍 Wedding Photography</h2>
+    <!-- Bubbly boxes layout (same style as pricing cards) -->
     <div class="pricing">
 
+      <!-- Contact Form Card -->
       <div class="card">
-        <span class="badge">Elopements</span>
-        <h3>Intimate Vows</h3>
-        <p class="price">$650</p>
+        <span class="badge">Inquiry Form</span>
+        <h3>Send an Inquiry</h3>
+
+        <form
+          class="form"
+          name="contact"
+          method="POST"
+          data-netlify="true"
+          action="/thank-you.html"
+        >
+          <input type="hidden" name="form-name" value="contact">
+
+          <label>
+            Name
+            <input type="text" name="name" required>
+          </label>
+
+          <label>
+            Email
+            <input type="email" name="email" required>
+          </label>
+
+          <label>
+            Session Type
+            <select name="session" required>
+              <option value="">Select one</option>
+              <option>Wedding</option>
+              <option>Family</option>
+              <option>Senior</option>
+              <option>Glamour</option>
+              <option>Couples / Engagement</option>
+              <option>Birthday / Anniversary</option>
+              <option>Mini Session</option>
+              <option>Custom Request</option>
+            </select>
+          </label>
+
+          <label>
+            Preferred Date (optional)
+            <input type="text" name="date" placeholder="Example: March 15, 2026">
+          </label>
+
+          <label>
+            Message
+            <textarea name="message" required></textarea>
+          </label>
+
+          <button class="button primary" type="submit">Send Message</button>
+
+          <p class="form-note">
+            A <strong>30% non-refundable retainer</strong> is required to book.
+            Remaining balance is due on the session date.
+            <a href="policies.html">View policies</a>.
+          </p>
+        </form>
+      </div>
+
+      <!-- Contact Info Card -->
+      <div class="card">
+        <span class="badge">Details</span>
+        <h3>Contact Information</h3>
+
+        <p>
+          <strong>Email</strong><br>
+          enchantedrosephotography@gmail.com
+        </p>
+
+        <p>
+          <strong>Phone</strong><br>
+          <a href="tel:+12259646788">225-964-6788</a>
+        </p>
+
+        <p>
+          <strong>Location</strong><br>
+          Linden, Tennessee
+        </p>
+
+        <p>
+          <strong>Facebook</strong><br>
+          <a href="https://www.facebook.com/profile.php?id=61585593907864" target="_blank">
+            Enchanted Rose Photography
+          </a>
+        </p>
+
+        <p class="form-note">
+          Prefer messaging on Facebook? That works too.
+        </p>
+      </div>
+
+      <!-- Optional third bubbly box (no prices) -->
+      <div class="card">
+        <span class="badge">What to Send</span>
+        <h3>Help Me Quote Fast</h3>
         <ul>
-          <li>Up to 1.5 hours</li>
-          <li>60+ edited images</li>
-          <li>Online gallery</li>
-          <li>Print release</li>
+          <li>Session type + vibe</li>
+          <li>Date + location</li>
+          <li>How many people</li>
+          <li>Any inspiration (Pinterest/Facebook links)</li>
         </ul>
       </div>
 
-      <div class="card">
-        <span class="badge">Most Popular</span>
-        <h3>Timeless Love</h3>
-        <p class="price">$1,300</p>
-        <ul>
-          <li>Up to 4 hours</li>
-          <li>200+ edited images</li>
-          <li>Online gallery</li>
-          <li>Print release</li>
-          <li>Sneak peek within 72 hours</li>
-        </ul>
-      </div>
+    </div>
 
-      <div class="card">
-        <span class="badge">Full Day</span>
-        <h3>Enchanted Wedding Experience</h3>
+  </div>
+</section>
+
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <strong>Enchanted Rose Photography</strong>
+      <p>Linden, TN</p>
+    </div>
+
+    <div class="socials">
+      <a class="pill" href="portfolio.html">Portfolio</a>
+      <a class="pill" href="pricing.html">Pricing</a>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>
