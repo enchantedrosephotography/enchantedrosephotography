@@ -1,5 +1,5 @@
 /* =========================
-   Enchanted Rose — Elegant Editorial Theme
+   Enchanted Rose — Elegant Editorial Theme (CLEAN + MOBILE FIXED)
    Works with your current HTML classes:
    header/nav/brand/navlinks/nav-cta
    hero-spotlight/hero-spotlight-card
@@ -33,6 +33,12 @@
 html,body{ margin:0; padding:0; }
 img{ max-width:100%; display:block; }
 a{ color: inherit; }
+
+/* Helpful overflow safety */
+.card, .card *{
+  overflow-wrap: anywhere;
+  word-break: normal;
+}
 
 body{
   font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -148,7 +154,11 @@ strong{ color: var(--text); }
   color: var(--text);
 }
 
-.nav-cta{ display:flex; align-items:center; gap: 10px; }
+.nav-cta{
+  display:flex;
+  align-items:center;
+  gap: 10px;
+}
 
 /* =========================
    Buttons / Pills
@@ -270,8 +280,10 @@ strong{ color: var(--text); }
     radial-gradient(700px 240px at 20% 0%, rgba(255,182,201,0.10), transparent 62%),
     rgba(255,255,255,0.06);
   border-color: rgba(255,182,201,0.16);
+  padding: 22px;
 }
 
+/* Unified, consistent grid behavior */
 .feature-grid{
   display:grid;
   grid-template-columns: repeat(3, minmax(0, 1fr));
@@ -335,6 +347,7 @@ strong{ color: var(--text); }
   align-items:center;
   justify-content: space-between;
   gap: 18px;
+  flex-wrap: wrap;
 }
 
 .bump{ margin-top: 26px; }
@@ -418,87 +431,76 @@ input:focus, select:focus, textarea:focus{
 .fab-book:hover{ transform: translateY(-1px); }
 
 /* =========================
-   Responsive
+   Responsive (CLEAN + CONSISTENT)
    ========================= */
-@media (max-width: 980px){
-  .feature-grid{ grid-template-columns: 1fr; }
-  .feature-card img{ height: 260px; }
-  .banner{ flex-direction: column; align-items: flex-start; }
-  .hero-spotlight{ min-height: 62vh; }
-  .hero-spotlight-card{ text-align: left; }
-}
-/* ===== Pricing spacing + overlap fix ===== */
 
-/* Let long lines wrap instead of overflowing */
-.card, .card *{
-  overflow-wrap: anywhere;
-  word-break: normal;
-}
-
-/* Make sure the pricing grid doesn’t squeeze too tight */
-.feature-grid{
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-}
-
-/* Switch to 2 columns sooner, then 1 column on mobile */
+/* 3 -> 2 columns */
 @media (max-width: 1100px){
   .feature-grid{ grid-template-columns: repeat(2, minmax(0, 1fr)); }
 }
+
+/* 2 -> 1 column + mobile layout improvements */
 @media (max-width: 820px){
+  .section{ padding: 56px 0; }
+
   .feature-grid{ grid-template-columns: 1fr; }
+  .feature-card img{ height: 260px; }
+
+  .banner{ flex-direction: column; align-items: flex-start; }
+
+  .hero-spotlight{ min-height: 62vh; }
+  .hero-spotlight-card{ text-align: left; }
+
+  /* Mobile nav: stack instead of awkward wrapping */
+  .nav{
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+  }
+  .brand{
+    width: 100%;
+    justify-content: space-between;
+  }
+  .navlinks{
+    width: 100%;
+    justify-content: center;
+    gap: 8px;
+  }
+  .nav-cta{
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
 }
 
-/* Give pricing cards consistent padding + readable list spacing */
-.card.soft{
-  padding: 22px;
-}
-.card.soft h3{ margin-bottom: 6px; }
-.card.soft p{ margin-bottom: 10px; }
-
-.card.soft ul{
-  margin: 10px 0 0;
-  padding-left: 18px;
-}
-.card.soft li{
-  margin: 8px 0;
-  line-height: 1.55;
-}
-
-/* Banner CTA: prevent button overlap */
-.banner{
-  flex-wrap: wrap;
-}
-.cta-row{
-  display:flex;
-  gap:10px;
-  flex-wrap: wrap;
-}
+/* Extra-small: make CTAs clean and tappable */
 @media (max-width: 480px){
+  .cta-row{ width: 100%; }
   .cta-row .button{
     width: 100%;
     justify-content: center;
     white-space: normal;
   }
 }
-/* ===== Pricing page: make text spacious + elegant ===== */
+
+/* =========================
+   Pricing page (ONLY when .page-pricing exists)
+   ========================= */
 .page-pricing .section-head{
   margin-bottom: 34px;
 }
 
-/* Make pricing layout less cramped: 2 columns desktop, 1 column mobile */
+/* 2 columns on desktop for pricing, 1 on mobile */
 .page-pricing .feature-grid{
   grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 20px;
 }
 
 @media (max-width: 820px){
-  .page-pricing .feature-grid{
-    grid-template-columns: 1fr;
-  }
+  .page-pricing .feature-grid{ grid-template-columns: 1fr; }
 }
 
-/* Bigger padding + nicer type rhythm */
+/* Make pricing cards more elegant */
 .page-pricing .card.soft{
   padding: 26px;
 }
@@ -514,7 +516,6 @@ input:focus, select:focus, textarea:focus{
   list-style: none;
 }
 
-/* KEY FIX: stack lines so nothing feels jammed */
 .page-pricing .card.soft li{
   padding: 12px 0;
   margin: 0;
@@ -527,25 +528,9 @@ input:focus, select:focus, textarea:focus{
   border-bottom: none;
 }
 
-/* Put the package title on its own line */
 .page-pricing .card.soft li strong{
   display: block;
   color: rgba(255,255,255,0.94);
   margin-bottom: 6px;
   letter-spacing: 0.2px;
 }
-
-/* Prevent weird overflow */
-.page-pricing .card.soft, 
-.page-pricing .card.soft *{
-  overflow-wrap: anywhere;
-}
-
-/* Banner spacing */
-.page-pricing .banner{
-  margin-top: 28px;
-  padding: 24px;
-  flex-wrap: wrap;
-}
-
-
