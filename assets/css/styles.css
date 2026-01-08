@@ -534,3 +534,68 @@ input:focus, select:focus, textarea:focus{
   margin-bottom: 6px;
   letter-spacing: 0.2px;
 }
+/* =========================
+   MOBILE HEADER FIX (CSS-only)
+   Put at END of file
+   ========================= */
+
+/* Make sure taps feel good */
+.navlinks a, .button, .pill { -webkit-tap-highlight-color: transparent; }
+
+@media (max-width: 820px){
+  /* Header spacing */
+  .nav{
+    flex-direction: column;
+    align-items: stretch;
+    gap: 10px;
+    padding: 12px 0;
+  }
+
+  /* Brand row */
+  .brand{
+    width: 100%;
+    justify-content: flex-start;
+  }
+
+  /* Links row becomes a scrollable chip bar (no ugly wrapping) */
+  .navlinks{
+    width: 100%;
+    flex-wrap: nowrap;                 /* key */
+    overflow-x: auto;                  /* key */
+    overflow-y: hidden;
+    -webkit-overflow-scrolling: touch;
+    gap: 8px;
+    padding-bottom: 6px;
+    justify-content: flex-start;
+    scrollbar-width: none;             /* Firefox */
+  }
+  .navlinks::-webkit-scrollbar{ display:none; } /* Chrome/Safari */
+
+  .navlinks a{
+    white-space: nowrap;               /* keep each link on 1 line */
+    padding: 10px 12px;
+    flex: 0 0 auto;
+  }
+
+  /* CTA row sits under the links, centered */
+  .nav-cta{
+    width: 100%;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+  }
+}
+
+/* Extra small: tighten logo and reduce “tall header” feeling */
+@media (max-width: 480px){
+  .logo-img{
+    width: 40px;
+    height: 40px;
+    border-radius: 12px;
+  }
+
+  .navlinks a{
+    padding: 9px 11px;
+  }
+}
+
