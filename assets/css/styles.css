@@ -2248,3 +2248,43 @@ r
 
 No file chosenNo file chosen
 ChatGPT can make mistakes. Check important info.
+
+/* =========================
+   PRICING PAGE — RESTORE ORIGINAL LOOK
+   Paste at END of stylesheet
+   ========================= */
+
+/* Remove the “fancy stacked list” look and return to a normal list */
+.page-pricing .card.soft ul{
+  margin: 10px 0 0;
+  padding-left: 18px;      /* normal bullet indentation */
+  list-style: disc;        /* bring bullets back */
+}
+
+.page-pricing .card.soft li{
+  padding: 0;              /* remove the big vertical blocks */
+  margin: 8px 0;
+  border-bottom: none;     /* remove dashed separators */
+  color: var(--muted);
+  line-height: 1.55;
+}
+
+/* Put strong back inline (not on its own line) */
+.page-pricing .card.soft li strong{
+  display: inline;
+  margin: 0;
+  letter-spacing: 0;
+  color: var(--text);
+}
+
+/* Make headings inside pricing cards behave normally */
+.page-pricing .card.soft h4{
+  margin: 14px 0 6px;
+  font-size: 16px;
+  color: rgba(255,255,255,0.90);
+}
+
+/* If you want pricing cards to be closer to “before”, reduce padding a bit */
+.page-pricing .card.soft{
+  padding: 22px;
+}
