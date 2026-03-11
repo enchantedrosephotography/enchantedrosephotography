@@ -72,42 +72,35 @@
       <p>Please fill out the form below and I’ll be in touch soon — or book instantly if you see an opening.</p>
     </div>
 
-    <div class="feature-grid">
+    <div class="contact-grid">
 
       <!-- FORM CARD -->
-      <div class="card soft">
-
+      <div class="card soft inquiry-card">
         <form
           action="https://formspree.io/f/mdakogko"
           method="POST"
           class="contact-form"
         >
-
-          <!-- Email subject -->
           <input type="hidden" name="_subject" value="New Inquiry — Enchanted Rose Photography">
 
-          <!-- NAME -->
-          <label>
+          <label for="name">
             Name
-            <input type="text" name="name" required>
+            <input id="name" type="text" name="name" required>
           </label>
 
-          <!-- EMAIL -->
-          <label>
+          <label for="email">
             Email
-            <input type="email" name="email" required>
+            <input id="email" type="email" name="email" required>
           </label>
 
-          <!-- PHONE -->
-          <label>
+          <label for="phone">
             Phone Number
-            <input type="tel" name="phone" placeholder="(555) 123-4567">
+            <input id="phone" type="tel" name="phone" placeholder="(555) 123-4567">
           </label>
 
-          <!-- SESSION TYPE -->
-          <label>
+          <label for="session_type">
             Session Type
-            <select name="session_type" required>
+            <select id="session_type" name="session_type" required>
               <option value="" disabled selected>Select one</option>
               <option>Wedding</option>
               <option>Glamour</option>
@@ -121,22 +114,20 @@
             </select>
           </label>
 
-          <!-- DATE -->
-          <label>
+          <label for="date">
             Preferred Date
-            <input type="date" name="date">
+            <input id="date" type="date" name="date">
           </label>
 
-          <!-- LOCATION -->
-          <label>
+          <label for="location">
             Location / City
-            <input type="text" name="location">
+            <input id="location" type="text" name="location">
           </label>
 
-          <!-- MESSAGE -->
-          <label>
+          <label for="message">
             Message
             <textarea
+              id="message"
               name="message"
               rows="6"
               placeholder="Tell me about your vision, vibe, or ideas..."
@@ -144,23 +135,20 @@
             ></textarea>
           </label>
 
-          <button type="submit" class="button primary">
-            Send Inquiry
-          </button>
-
+          <button type="submit" class="button primary">Send Inquiry</button>
         </form>
       </div>
 
-      <!-- SQUARE BOOKING CARD -->
-      <div class="card soft">
+      <!-- BOOKING CARD -->
+      <div class="card soft booking-card">
         <h3>Book Instantly</h3>
-        <p>If you’re ready to lock in a date/time for an available session, book below.</p>
+        <p>If you’re ready to lock in a date and time for an available session, book below.</p>
 
-        <!-- Start Square Appointments Embed Code -->
-        <script src="https://square.site/appointments/buyer/widget/ljxq5sjappuqxl/LZRP3NS9GXBR4.js"></script>
-        <!-- End Square Appointments Embed Code -->
+        <div class="square-embed">
+          <script src="https://square.site/appointments/buyer/widget/ljxq5sjappuqxl/LZRP3NS9GXBR4.js"></script>
+        </div>
 
-        <div style="margin-top:16px">
+        <div class="pill-row" style="margin-top:16px">
           <a class="pill" href="policies.html">Policies</a>
           <a class="pill" href="pricing.html">Pricing</a>
           <a class="pill" href="portfolio.html">Portfolio</a>
@@ -168,16 +156,16 @@
       </div>
 
       <!-- INFO CARD -->
-      <div class="card soft">
+      <div class="card soft info-card">
         <h3>What to include</h3>
-        <ul>
+        <ul class="info-list">
           <li>Session type</li>
           <li>Preferred date</li>
           <li>Location or travel needs</li>
           <li>Overall vibe or inspiration</li>
         </ul>
 
-        <div style="margin-top:16px">
+        <div class="pill-row" style="margin-top:16px">
           <a class="pill" href="pricing.html">Pricing</a>
           <a class="pill" href="portfolio.html">Portfolio</a>
           <a class="pill" href="policies.html">Policies</a>
@@ -188,7 +176,6 @@
 
   </div>
 </section>
-
 <!-- ================= FOOTER ================= -->
 <footer class="footer">
   <div class="container footer-grid">
@@ -211,3 +198,4 @@
 <script src="assets/js/site.js"></script>
 </body>
 </html>
+
