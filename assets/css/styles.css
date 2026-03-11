@@ -547,4 +547,21 @@ input:focus, select:focus, textarea:focus{
   padding: 24px;
   flex-wrap: wrap;
 }
+.feature-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 16px;
+}
+
+.feature-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.feature-content {
+  position: absolute;
+  inset: auto 0 0 0;
+  padding: 18px;
+}
 
