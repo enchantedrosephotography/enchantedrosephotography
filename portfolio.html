@@ -1,302 +1,68 @@
-<!doctype html>
-<html lang="en">
-<head>
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+.gallery-slider {
+  position: relative;
+  overflow: hidden;
+  margin-top: 24px;
+}
 
-  <title>Portfolio | Enchanted Rose Photography</title>
-  <meta name="description" content="Explore the Enchanted Rose Photography portfolio: glamour, weddings, portraits, couples, and milestones in a moody, romantic cinematic style.">
+.gallery-track {
+  display: flex;
+  gap: 20px;
+  overflow-x: auto;
+  scroll-behavior: smooth;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+  padding: 6px 0 12px;
+}
 
-  <link rel="icon" type="image/png" href="assets/img/logo-mark.png">
-  <link rel="stylesheet" href="assets/css/styles.css">
-</head>
+.gallery-track::-webkit-scrollbar {
+  display: none;
+}
 
-<body>
+.gallery-item {
+  flex: 0 0 auto;
+  display: block;
+}
 
-<header class="header">
-  <div class="container">
-    <nav class="nav">
+.gallery-item img {
+  display: block;
+  width: auto;
+  height: 340px;
+  border-radius: 14px;
+  object-fit: cover;
+}
 
-      <a class="brand" href="index.html">
-        <img class="logo-img" src="assets/img/logo-primary.png" alt="Enchanted Rose Photography">
-        <div>
-          <strong>Enchanted Rose</strong><br>
-          <small>Photography</small>
-        </div>
-      </a>
+.gallery-arrow {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 2;
+  border: none;
+  cursor: pointer;
+  width: 46px;
+  height: 46px;
+  border-radius: 999px;
+  background: rgba(0, 0, 0, 0.65);
+  color: #fff;
+  font-size: 24px;
+  line-height: 1;
+}
 
-      <div class="navlinks">
-        <a href="index.html">Home</a>
-        <a href="about.html">About</a>
-        <a href="portfolio.html" aria-current="page">Portfolio</a>
-        <a href="pricing.html">Pricing</a>
-        <a href="contact.html">Contact</a>
-      </div>
+.gallery-arrow.left {
+  left: 10px;
+}
 
-      <div class="nav-cta">
-        <a class="button primary" href="contact.html">Book</a>
-      </div>
+.gallery-arrow.right {
+  right: 10px;
+}
 
-    </nav>
-  </div>
-</header>
+@media (max-width: 768px) {
+  .gallery-item img {
+    height: 260px;
+  }
 
-<section class="hero-spotlight">
-  <img src="assets/img/hero-banner.jpg" alt="Enchanted Rose Photography portfolio hero" class="hero-spotlight-img">
-  <div class="hero-spotlight-overlay"></div>
-
-  <div class="hero-spotlight-content container">
-    <div class="hero-spotlight-card">
-      <h1>Portfolio</h1>
-<p>My photography style blends moody lighting, rich tones, and cinematic storytelling to create images that feel emotional and timeless. Glamour photography is my signature, with weddings following closely behind, but my portfolio also includes seniors, couples, portraits, and milestone moments. Each session is crafted to capture authentic emotion and turn it into a story you can see and feel.</p>      
-      <div style="margin-top:18px" class="cta-row">
-        <a class="button primary" href="contact.html">Check Availability</a>
-        <a class="button" href="pricing.html">See Pricing</a>
-      </div>
-    </div>
-  </div>
-</section>
-
-<section class="section">
-  <div class="container">
-
-    <div class="section-head">
-      <h2>Browse by category</h2>
-      <p>Select a category to explore the vibe. Want something custom? Tell me your vision and I’ll build the session around it.</p>
-    </div>
-
-    <div class="feature-grid">
-
-      <a class="feature-card" href="#glamour">
-        <img src="assets/img/p1.jpg" alt="Glamour photography portfolio">
-        <div class="feature-overlay"></div>
-        <div class="feature-content">
-          <h3>Glamour</h3>
-          <p>Fantasy • fairytale • dark romance • surreal</p>
-        </div>
-      </a>
-
-      <a class="feature-card" href="#weddings">
-        <img src="assets/img/p2.jpg" alt="Wedding photography portfolio">
-        <div class="feature-overlay"></div>
-        <div class="feature-content">
-          <h3>Weddings</h3>
-          <p>Cinematic storytelling • emotion-forward • timeless edits</p>
-        </div>
-      </a>
-
-      <a class="feature-card" href="#portraits">
-        <img src="assets/img/p3.jpg" alt="Portrait photography portfolio">
-        <div class="feature-overlay"></div>
-        <div class="feature-content">
-          <h3>Portraits</h3>
-          <p>Families • seniors • lifestyle • moody light</p>
-        </div>
-      </a>
-
-<a class="feature-card" href="#couples">
-        <img src="assets/img/p4.jpg" alt="Couples photography portfolio">
-        <div class="feature-overlay"></div>
-        <div class="feature-content">
-          <h3>Couples</h3>
-          <p>Connection • movement • romantic storytelling</p>
-        </div>
-      </a>
-
-      <a class="feature-card" href="#milestones">
-        <img src="assets/img/p5.jpg" alt="Milestone photography portfolio">
-        <div class="feature-overlay"></div>
-        <div class="feature-content">
-          <h3>Milestones</h3>
-          <p>Birthdays • celebrations • memories you can feel</p>
-        </div>
-      </a>
-
-      <a class="feature-card" href="pricing.html">
-        <img src="assets/img/p6.jpg" alt="Photography packages and pricing">
-        <div class="feature-overlay"></div>
-        <div class="feature-content">
-          <h3>Packages</h3>
-          <p>See what’s included + choose your session</p>
-        </div>
-      </a>
-
-    </div>
-
-  </div>
-</section>
-
-<section class="section portfolio-galleries">
-  <div class="container">
-
-    <!-- GLAMOUR -->
-    <section class="gallery-section" id="glamour">
-      <div class="gallery-head">
-        <div>
-          <h2>Glamour</h2>
-          <p>Fantasy, fairytale, dark romance, and surreal portraiture.</p>
-        </div>
-        <a class="pill" href="#top">Back to top</a>
-      </div>
-
-      <div class="gallery-grid">
-        <a class="gallery-item" href="assets/img/glamour-1.jpg" target="_blank" rel="noreferrer">
-          <img src="assets/img/glamour-1.jpg" alt="Glamour portrait 1">
-        </a>
-        <a class="gallery-item" href="assets/img/glamour-2.jpg" target="_blank" rel="noreferrer">
-          <img src="assets/img/glamour-2.jpg" alt="Glamour portrait 2">
-        </a>
-        <a class="gallery-item" href="assets/img/glamour-3.jpg" target="_blank" rel="noreferrer">
-          <img src="assets/img/glamour-3.jpg" alt="Glamour portrait 3">
-        </a>
-        <a class="gallery-item" href="assets/img/glamour-4.jpg" target="_blank" rel="noreferrer">
-          <img src="assets/img/glamour-4.jpg" alt="Glamour portrait 4">
-        </a>
-      </div>
-    </section>
-
-    <!-- WEDDINGS -->
-    <section class="gallery-section" id="weddings">
-      <div class="gallery-head">
-        <div>
-          <h2>Weddings</h2>
-          <p>Cinematic storytelling, emotion, and timeless wedding moments.</p>
-        </div>
-        <a class="pill" href="#top">Back to top</a>
-      </div>
-
-      <div class="gallery-grid">
-        <a class="gallery-item" href="assets/img/wedding-1.jpg" target="_blank" rel="noreferrer">
-          <img src="assets/img/wedding-1.jpg" alt="Wedding photo 1">
-        </a>
-        <a class="gallery-item" href="assets/img/wedding-2.jpg" target="_blank" rel="noreferrer">
-          <img src="assets/img/wedding-2.jpg" alt="Wedding photo 2">
-        </a>
-        <a class="gallery-item" href="assets/img/wedding-3.jpg" target="_blank" rel="noreferrer">
-          <img src="assets/img/wedding-3.jpg" alt="Wedding photo 3">
-        </a>
-        <a class="gallery-item" href="assets/img/wedding-4.jpg" target="_blank" rel="noreferrer">
-          <img src="assets/img/wedding-4.jpg" alt="Wedding photo 4">
-        </a>
-      </div>
-    </section>
-
-    <!-- PORTRAITS -->
-    <section class="gallery-section" id="portraits">
-      <div class="gallery-head">
-        <div>
-          <h2>Portraits</h2>
-          <p>Families, seniors, and lifestyle sessions with moody light and story.</p>
-        </div>
-        <a class="pill" href="#top">Back to top</a>
-      </div>
-
-      <div class="gallery-grid">
-        <a class="gallery-item" href="assets/img/portrait-1.jpg" target="_blank" rel="noreferrer">
-          <img src="assets/img/portrait-1.jpg" alt="Portrait photo 1">
-        </a>
-        <a class="gallery-item" href="assets/img/portrait-2.jpg" target="_blank" rel="noreferrer">
-          <img src="assets/img/portrait-2.jpg" alt="Portrait photo 2">
-        </a>
-        <a class="gallery-item" href="assets/img/portrait-3.jpg" target="_blank" rel="noreferrer">
-          <img src="assets/img/portrait-3.jpg" alt="Portrait photo 3">
-        </a>
-        <a class="gallery-item" href="assets/img/portrait-4.jpg" target="_blank" rel="noreferrer">
-          <img src="assets/img/portrait-4.jpg" alt="Portrait photo 4">
-        </a>
-      </div>
-    </section>
-<!-- COUPLES -->
-<section class="gallery-section" id="couples">
-  <div class="gallery-head">
-    <div>
-      <h2>Couples</h2>
-      <p>Connection, intimacy, movement, and romantic storytelling.</p>
-    </div>
-    <a class="pill" href="#top">Back to top</a>
-  </div>
-
-  <div class="gallery-grid">
-    <a class="gallery-item" href="assets/img/couples-1.jpg" target="_blank" rel="noreferrer">
-      <img src="assets/img/couples-1.jpg" alt="Couples photo 1">
-    </a>
-
-    <a class="gallery-item" href="assets/img/couples-2.jpg" target="_blank" rel="noreferrer">
-      <img src="assets/img/couples-2.jpg" alt="Couples photo 2">
-    </a>
-
-    <a class="gallery-item" href="assets/img/couples-3.jpg" target="_blank" rel="noreferrer">
-      <img src="assets/img/couples-3.jpg" alt="Couples photo 3">
-    </a>
-  </div>
-</section>
-  
-    <!-- MILESTONES -->
-    <section class="gallery-section" id="milestones">
-      <div class="gallery-head">
-        <div>
-          <h2>Milestones</h2>
-          <p>Birthdays, celebrations, achievements, and memory-filled moments.</p>
-        </div>
-        <a class="pill" href="#top">Back to top</a>
-      </div>
-
-      <div class="gallery-grid">
-        <a class="gallery-item" href="assets/img/milestone-1.jpg" target="_blank" rel="noreferrer">
-          <img src="assets/img/milestone-1.jpg" alt="Milestone photo 1">
-        </a>
-        <a class="gallery-item" href="assets/img/milestone-2.jpg" target="_blank" rel="noreferrer">
-          <img src="assets/img/milestone-2.jpg" alt="Milestone photo 2">
-        </a>
-        <a class="gallery-item" href="assets/img/milestone-3.jpg" target="_blank" rel="noreferrer">
-          <img src="assets/img/milestone-3.jpg" alt="Milestone photo 3">
-        </a>
-        <a class="gallery-item" href="assets/img/milestone-4.jpg" target="_blank" rel="noreferrer">
-          <img src="assets/img/milestone-4.jpg" alt="Milestone photo 4">
-        </a>
-      </div>
-    </section>
-
-    <div class="banner card soft bump">
-      <div>
-        <h2>See something that fits your vision?</h2>
-        <p>Tell me what kind of session you want and I’ll help you plan the perfect shoot.</p>
-      </div>
-
-      <div class="cta-row">
-        <a class="button primary" href="contact.html">Book a Session</a>
-        <a class="button" href="pricing.html">View Pricing</a>
-      </div>
-    </div>
-
-  </div>
-</section>
-
-<footer class="footer">
-  <div class="container footer-grid">
-    <div>
-      <strong>Enchanted Rose Photography</strong>
-      <p>Linden, TN • Moody • Romantic • Cinematic</p>
-    </div>
-
-    <div class="socials">
-      <a class="pill" href="https://www.facebook.com/profile.php?id=61585593907864" target="_blank" rel="noreferrer">Facebook</a>
-      <a class="pill" href="policies.html">Policies</a>
-      <a class="pill" href="contact.html">Contact</a>
-    </div>
-  </div>
-</footer>
-
-<a class="fab-book" href="contact.html">Book Now</a>
-
-<script src="assets/js/site.js"></script>
-</body>
-</html>
-
-
-
-
-
-
-
-
+  .gallery-arrow {
+    width: 40px;
+    height: 40px;
+    font-size: 20px;
+  }
+}
