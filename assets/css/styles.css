@@ -425,7 +425,7 @@ input:focus, select:focus, textarea:focus{
   .feature-card img{ height: 260px; }
   .banner{ flex-direction: column; align-items: flex-start; }
   .hero-spotlight{ min-height: 62vh; }
-  .hero-spotlight-card{ text-align: left; }
+  .hero-spotlight-card{ text-align: center; }
 }
 /* ===== Pricing spacing + overlap fix ===== */
 
@@ -669,4 +669,5 @@ html, body {
     margin-bottom: 22px;
   }
 }
+
 
