@@ -1360,4 +1360,25 @@ document.querySelectorAll(".gallery-slider").forEach((slider) => {
     });
   });
 });
+document.querySelectorAll(".portfolio-galleries .gallery-slider").forEach((slider) => {
+  const track = slider.querySelector(".gallery-track");
+  const leftBtn = slider.querySelector(".gallery-arrow.left");
+  const rightBtn = slider.querySelector(".gallery-arrow.right");
+
+  if (!track || !leftBtn || !rightBtn) return;
+
+  leftBtn.addEventListener("click", () => {
+    track.scrollBy({
+      left: -400,
+      behavior: "smooth"
+    });
+  });
+
+  rightBtn.addEventListener("click", () => {
+    track.scrollBy({
+      left: 400,
+      behavior: "smooth"
+    });
+  });
+});
 
