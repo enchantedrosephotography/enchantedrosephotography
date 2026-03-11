@@ -1,10 +1,10 @@
-.gallery-slider {
+.portfolio-galleries .gallery-slider {
   position: relative;
   overflow: hidden;
   margin-top: 24px;
 }
 
-.gallery-track {
+.portfolio-galleries .gallery-track {
   display: flex;
   gap: 20px;
   overflow-x: auto;
@@ -14,16 +14,16 @@
   padding: 6px 0 12px;
 }
 
-.gallery-track::-webkit-scrollbar {
+.portfolio-galleries .gallery-track::-webkit-scrollbar {
   display: none;
 }
 
-.gallery-item {
+.portfolio-galleries .gallery-item {
   flex: 0 0 auto;
   display: block;
 }
 
-.gallery-item img {
+.portfolio-galleries .gallery-item img {
   display: block;
   width: auto;
   height: 340px;
@@ -31,7 +31,7 @@
   object-fit: cover;
 }
 
-.gallery-arrow {
+.portfolio-galleries .gallery-arrow {
   position: absolute;
   top: 50%;
   transform: translateY(-50%);
@@ -47,20 +47,20 @@
   line-height: 1;
 }
 
-.gallery-arrow.left {
+.portfolio-galleries .gallery-arrow.left {
   left: 10px;
 }
 
-.gallery-arrow.right {
+.portfolio-galleries .gallery-arrow.right {
   right: 10px;
 }
 
 @media (max-width: 768px) {
-  .gallery-item img {
+  .portfolio-galleries .gallery-item img {
     height: 260px;
   }
 
-  .gallery-arrow {
+  .portfolio-galleries .gallery-arrow {
     width: 40px;
     height: 40px;
     font-size: 20px;
