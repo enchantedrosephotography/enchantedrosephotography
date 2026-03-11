@@ -564,4 +564,109 @@ input:focus, select:focus, textarea:focus{
   inset: auto 0 0 0;
   padding: 18px;
 }
+/* ===== MOBILE FIX FOR PORTFOLIO + HEADER ===== */
+
+html, body {
+  overflow-x: hidden;
+}
+
+@media (max-width: 768px) {
+  .container {
+    width: min(100% - 24px, 1120px);
+  }
+
+  .nav {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 12px;
+    padding: 12px 0;
+  }
+
+  .brand {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .navlinks {
+    justify-content: center;
+    gap: 8px;
+  }
+
+  .navlinks a {
+    padding: 8px 10px;
+    font-size: 14px;
+  }
+
+  .nav-cta {
+    width: 100%;
+    justify-content: center;
+  }
+
+  .nav-cta .button {
+    width: 100%;
+    max-width: 220px;
+  }
+
+  .hero-spotlight {
+    min-height: auto;
+  }
+
+  .hero-spotlight-content {
+    padding: 32px 0;
+  }
+
+  .hero-spotlight-card {
+    max-width: 100%;
+    padding: 20px;
+    text-align: center;
+  }
+
+  .hero-spotlight-card p {
+    font-size: 15px;
+  }
+
+  .cta-row {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .cta-row .button {
+    width: 100%;
+  }
+
+  .feature-grid {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+
+  .feature-card {
+    border-radius: 18px;
+  }
+
+  .feature-card img {
+    height: 260px;
+  }
+
+  .feature-content {
+    padding: 16px;
+  }
+
+  .feature-content h3 {
+    font-size: 18px;
+  }
+
+  .feature-content p {
+    font-size: 14px;
+    line-height: 1.4;
+  }
+
+  .section {
+    padding: 56px 0;
+  }
+
+  .section-head {
+    margin-bottom: 22px;
+  }
+}
 
