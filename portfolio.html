@@ -313,5 +313,31 @@
 <a class="fab-book" href="contact.html">Book Now</a>
 
 <script src="assets/js/site.js"></script>
+<script>
+document.querySelectorAll(".erp-slider").forEach(function (slider) {
+
+  const track = slider.querySelector(".erp-track");
+  const leftBtn = slider.querySelector(".erp-arrow-left");
+  const rightBtn = slider.querySelector(".erp-arrow-right");
+
+  if (!track || !leftBtn || !rightBtn) return;
+
+  leftBtn.addEventListener("click", function () {
+    track.scrollBy({
+      left: -420,
+      behavior: "smooth"
+    });
+  });
+
+  rightBtn.addEventListener("click", function () {
+    track.scrollBy({
+      left: 420,
+      behavior: "smooth"
+    });
+  });
+
+});
+</script>
 </body>
 </html>
+
