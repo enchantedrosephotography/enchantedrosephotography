@@ -669,6 +669,36 @@ html, body {
     margin-bottom: 22px;
   }
 }
+@media (max-width: 768px) {
+  .nav {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 12px;
+    padding: 12px 0;
+  }
+
+  .brand {
+    justify-content: center;
+    text-align: center;
+  }
+
+  .navlinks {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 8px;
+    width: 100%;
+  }
+
+  .navlinks a {
+    text-align: center;
+    padding: 9px 8px;
+    font-size: 14px;
+  }
+
+  .nav-cta {
+    justify-content: center;
+  }
+}
 
 
 
