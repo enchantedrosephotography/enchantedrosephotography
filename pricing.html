@@ -1,194 +1,459 @@
-/* =========================
-   PRICING PAGE REWRITE
-   ========================= */
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-.page-pricing .pricing-hero {
-  padding: 84px 0 54px;
-  border-bottom: 1px solid rgba(255,255,255,0.08);
-}
+  <title>Pricing | Enchanted Rose Photography</title>
+  <meta name="description" content="Photography pricing for weddings, glamour, portraits, couples, engagements, and milestones by Enchanted Rose Photography.">
 
-.page-pricing .pricing-hero-inner {
-  max-width: 860px;
-  margin: 0 auto;
-  text-align: center;
-}
+  <link rel="icon" type="image/png" href="assets/img/logo-mark.png">
+  <link rel="stylesheet" href="assets/css/styles.css">
+</head>
 
-.page-pricing .eyebrow {
-  display: inline-block;
-  margin-bottom: 10px;
-  padding: 8px 12px;
-  border-radius: 999px;
-  background: rgba(255,255,255,0.06);
-  border: 1px solid rgba(255,255,255,0.14);
-  color: rgba(255,255,255,0.82);
-  font-size: 13px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
+<body class="page-pricing">
 
-.page-pricing .pricing-intro {
-  max-width: 720px;
-  margin: 0 auto;
-  font-size: 17px;
-  color: rgba(255,255,255,0.78);
-}
+<!-- ================= HEADER ================= -->
+<header class="header">
+  <div class="container">
+    <nav class="nav">
+      <a class="brand" href="index.html">
+        <img class="logo-img" src="assets/img/logo-primary.png" alt="Enchanted Rose Photography">
+        <div>
+          <strong>Enchanted Rose</strong><br>
+          <small>Photography</small>
+        </div>
+      </a>
 
-.page-pricing .pricing-hero-actions {
-  display: flex;
-  gap: 12px;
-  justify-content: center;
-  flex-wrap: wrap;
-  margin-top: 22px;
-}
+      <div class="navlinks">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="portfolio.html">Portfolio</a>
+        <a href="pricing.html" aria-current="page">Pricing</a>
+        <a href="contact.html">Contact</a>
+      </div>
 
-.page-pricing .pricing-note {
-  margin-top: 20px;
-  padding: 16px 18px;
-  border-radius: 18px;
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
-  color: rgba(255,255,255,0.78);
-}
+      <div class="nav-cta">
+        <a class="button primary" href="contact.html">Book</a>
+      </div>
+    </nav>
+  </div>
+</header>
 
-.page-pricing .pricing-nav-section {
-  padding-top: 34px;
-  padding-bottom: 24px;
-}
+<!-- ================= HERO ================= -->
+<section class="pricing-hero">
+  <div class="container">
+    <div class="pricing-hero-inner">
+      <p class="eyebrow">Service Guide</p>
+      <h1>Pricing & Packages</h1>
+      <p class="pricing-intro">
+        Thoughtfully designed sessions, cinematic edits, and clear package options for every chapter —
+        from weddings and glamour to families, seniors, and milestone moments.
+      </p>
 
-.page-pricing .pricing-jump {
-  padding: 22px;
-}
+      <div class="pricing-hero-actions">
+        <a class="button primary" href="contact.html">Check Availability</a>
+        <a class="button" href="policies.html">Read Policies</a>
+      </div>
 
-.page-pricing .pricing-jump h2 {
-  margin-bottom: 14px;
-}
+      <div class="pricing-note">
+        <strong>Booking note:</strong> A 30% non-refundable retainer is required to secure your date.
+        Remaining balance is due on the session date.
+      </div>
+    </div>
+  </div>
+</section>
 
-.page-pricing .pricing-jump-links {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 10px;
-}
+<!-- ================= QUICK LINKS ================= -->
+<section class="section pricing-nav-section">
+  <div class="container">
+    <div class="pricing-jump card soft">
+      <h2>Browse Pricing</h2>
+      <div class="pricing-jump-links">
+        <a class="pill" href="#weddings">Weddings</a>
+        <a class="pill" href="#glamour">Glamour</a>
+        <a class="pill" href="#family">Family</a>
+        <a class="pill" href="#seniors">Seniors</a>
+        <a class="pill" href="#couples">Couples</a>
+        <a class="pill" href="#engagements">Engagements</a>
+        <a class="pill" href="#milestones">Milestones</a>
+        <a class="pill" href="#minis">Minis & Add-Ons</a>
+        <a class="pill" href="#travel">Travel</a>
+      </div>
+    </div>
+  </div>
+</section>
 
-.page-pricing .pricing-sections {
-  padding-top: 24px;
-}
+<!-- ================= PRICING SECTIONS ================= -->
+<section class="section pricing-sections">
+  <div class="container">
 
-.page-pricing .pricing-block {
-  margin-bottom: 26px;
-  padding: 26px;
-  border-radius: var(--radius);
-  background: rgba(255,255,255,0.05);
-  border: 1px solid rgba(255,255,255,0.1);
-  box-shadow: var(--shadow-soft);
-}
+    <!-- Weddings -->
+    <section class="pricing-block" id="weddings">
+      <div class="pricing-block-head">
+        <div>
+          <p class="pricing-kicker">Wedding Photography</p>
+          <h2>Weddings</h2>
+        </div>
+        <a class="button primary" href="contact.html?category=wedding">Inquire</a>
+      </div>
 
-.page-pricing .pricing-block-head {
-  display: flex;
-  align-items: end;
-  justify-content: space-between;
-  gap: 18px;
-  margin-bottom: 10px;
-}
+      <p class="pricing-block-copy">
+        Emotional, cinematic storytelling with calm direction and intentional coverage.
+      </p>
 
-.page-pricing .pricing-kicker {
-  margin: 0 0 6px;
-  color: var(--rose-2);
-  font-size: 13px;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
+      <div class="package-stack">
+        <a class="package-row" href="contact.html?package=intimate-vows">
+          <div class="package-main">
+            <h3>Intimate Vows</h3>
+            <p>Up to 2 hours · wedding only</p>
+            <span>50 edited photos · online gallery · one photographer · travel within 30 miles included</span>
+          </div>
+          <div class="package-price">$650</div>
+        </a>
 
-.page-pricing .pricing-block-copy {
-  margin-bottom: 18px;
-}
+        <a class="package-row" href="contact.html?package=timeless-love">
+          <div class="package-main">
+            <h3>Timeless Love</h3>
+            <p>Up to 5 hours · wedding and reception only</p>
+            <span>Up to 200 edited photos · online gallery · one photographer · 25 glamour shots · travel within 75 miles included</span>
+          </div>
+          <div class="package-price">$1,300</div>
+        </a>
 
-.page-pricing .package-stack {
-  display: grid;
-  gap: 12px;
-}
+        <a class="package-row" href="contact.html?package=enchanted-fairytale">
+          <div class="package-main">
+            <h3>Enchanted Fairytale</h3>
+            <p>Full day coverage</p>
+            <span>Up to 350 edited photos · 50 glamour shots · engagement session included · prep, wedding, and reception · one photographer · online gallery · travel within 100 miles included</span>
+          </div>
+          <div class="package-price">$2,100</div>
+        </a>
 
-.page-pricing .package-row {
-  display: grid;
-  grid-template-columns: 1fr auto;
-  gap: 18px;
-  align-items: center;
-  padding: 18px;
-  border-radius: 18px;
-  text-decoration: none;
-  background: rgba(0,0,0,0.18);
-  border: 1px solid rgba(255,255,255,0.1);
-  transition: transform 0.18s ease, border-color 0.18s ease, background 0.18s ease;
-}
+        <a class="package-row" href="contact.html?package=additional-coverage">
+          <div class="package-main">
+            <h3>Additional Coverage</h3>
+            <p>Add more time as needed</p>
+            <span>Extra coverage for wedding day flexibility.</span>
+          </div>
+          <div class="package-price">$200/hr</div>
+        </a>
+      </div>
+    </section>
 
-.page-pricing .package-row:hover {
-  transform: translateY(-2px);
-  border-color: rgba(255,182,201,0.34);
-  background: rgba(255,255,255,0.06);
-}
+    <!-- Glamour -->
+    <section class="pricing-block" id="glamour">
+      <div class="pricing-block-head">
+        <div>
+          <p class="pricing-kicker">Signature Style</p>
+          <h2>Glamour Portraits</h2>
+        </div>
+        <a class="button primary" href="contact.html?category=glamour">Inquire</a>
+      </div>
 
-.page-pricing .package-main h3 {
-  margin: 0 0 4px;
-  color: rgba(255,255,255,0.94);
-}
+      <p class="pricing-block-copy">
+        Fantasy, fairytale, dark romance, and surreal portraiture with an editorial feel.
+      </p>
 
-.page-pricing .package-main p {
-  margin: 0 0 6px;
-  color: rgba(255,255,255,0.86);
-}
+      <div class="package-stack">
+        <a class="package-row" href="contact.html?package=soft-glam">
+          <div class="package-main">
+            <h3>Soft Glam</h3>
+            <p>45 minutes</p>
+            <span>10 images · online portal for viewing · photos within 2 weeks</span>
+          </div>
+          <div class="package-price">$225</div>
+        </a>
 
-.page-pricing .package-main span {
-  display: block;
-  color: rgba(255,255,255,0.68);
-  line-height: 1.55;
-}
+        <a class="package-row" href="contact.html?package=bold-beauty">
+          <div class="package-main">
+            <h3>Bold Beauty</h3>
+            <p>1.5 hours</p>
+            <span>25 images · online portal for viewing · photos within 2 weeks</span>
+          </div>
+          <div class="package-price">$400</div>
+        </a>
 
-.page-pricing .package-price {
-  white-space: nowrap;
-  font-size: 22px;
-  font-weight: 750;
-  color: var(--rose-2);
-}
+        <a class="package-row" href="contact.html?package=iconic-glam-experience">
+          <div class="package-main">
+            <h3>Iconic Glam Experience</h3>
+            <p>Up to 2 hours</p>
+            <span>45 images · online portal for viewing · photos within 2 weeks</span>
+          </div>
+          <div class="package-price">$600</div>
+        </a>
+      </div>
+    </section>
 
-.page-pricing .pricing-cta {
-  margin-top: 28px;
-  padding: 24px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  gap: 18px;
-}
+    <!-- Family -->
+    <section class="pricing-block" id="family">
+      <div class="pricing-block-head">
+        <div>
+          <p class="pricing-kicker">Portrait Sessions</p>
+          <h2>Family</h2>
+        </div>
+        <a class="button primary" href="contact.html?category=family">Inquire</a>
+      </div>
 
-/* Mobile */
-@media (max-width: 900px) {
-  .page-pricing .pricing-block-head {
-    flex-direction: column;
-    align-items: flex-start;
-  }
+      <div class="package-stack">
+        <a class="package-row" href="contact.html?package=family-simple-moments">
+          <div class="package-main">
+            <h3>Simple Moments</h3>
+            <p>25 minutes</p>
+            <span>8 images</span>
+          </div>
+          <div class="package-price">$175</div>
+        </a>
 
-  .page-pricing .pricing-cta {
-    flex-direction: column;
-    align-items: flex-start;
-  }
-}
+        <a class="package-row" href="contact.html?package=family-story">
+          <div class="package-main">
+            <h3>Family Story</h3>
+            <p>45 minutes</p>
+            <span>20 images</span>
+          </div>
+          <div class="package-price">$300</div>
+        </a>
 
-@media (max-width: 768px) {
-  .page-pricing .pricing-hero {
-    padding: 64px 0 40px;
-  }
+        <a class="package-row" href="contact.html?package=family-heirloom">
+          <div class="package-main">
+            <h3>Heirloom</h3>
+            <p>Up to 1.5 hours</p>
+            <span>40 images</span>
+          </div>
+          <div class="package-price">$475</div>
+        </a>
+      </div>
+    </section>
 
-  .page-pricing .pricing-block {
-    padding: 18px;
-  }
+    <!-- Seniors -->
+    <section class="pricing-block" id="seniors">
+      <div class="pricing-block-head">
+        <div>
+          <p class="pricing-kicker">Portrait Sessions</p>
+          <h2>Seniors</h2>
+        </div>
+        <a class="button primary" href="contact.html?category=senior">Inquire</a>
+      </div>
 
-  .page-pricing .package-row {
-    grid-template-columns: 1fr;
-  }
+      <div class="package-stack">
+        <a class="package-row" href="contact.html?package=senior-simply-you">
+          <div class="package-main">
+            <h3>Simply You</h3>
+            <p>30 minutes</p>
+            <span>8 images</span>
+          </div>
+          <div class="package-price">$175</div>
+        </a>
 
-  .page-pricing .package-price {
-    font-size: 20px;
-  }
+        <a class="package-row" href="contact.html?package=senior-golden-hour">
+          <div class="package-main">
+            <h3>Golden Hour</h3>
+            <p>1 hour</p>
+            <span>20 images</span>
+          </div>
+          <div class="package-price">$300</div>
+        </a>
 
-  .page-pricing .pricing-jump {
-    padding: 18px;
-  }
-}
+        <a class="package-row" href="contact.html?package=signature-senior">
+          <div class="package-main">
+            <h3>Signature Senior</h3>
+            <p>1.5 hours</p>
+            <span>40 images</span>
+          </div>
+          <div class="package-price">$475</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Couples -->
+    <section class="pricing-block" id="couples">
+      <div class="pricing-block-head">
+        <div>
+          <p class="pricing-kicker">Connection Sessions</p>
+          <h2>Couples</h2>
+        </div>
+        <a class="button primary" href="contact.html?category=couples">Inquire</a>
+      </div>
+
+      <div class="package-stack">
+        <a class="package-row" href="contact.html?package=love-notes">
+          <div class="package-main">
+            <h3>Love Notes</h3>
+            <p>30 minutes</p>
+            <span>12 images</span>
+          </div>
+          <div class="package-price">$225</div>
+        </a>
+
+        <a class="package-row" href="contact.html?package=forever-us">
+          <div class="package-main">
+            <h3>Forever Us</h3>
+            <p>1 hour</p>
+            <span>30 images</span>
+          </div>
+          <div class="package-price">$400</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Engagements -->
+    <section class="pricing-block" id="engagements">
+      <div class="pricing-block-head">
+        <div>
+          <p class="pricing-kicker">Pre-Wedding Sessions</p>
+          <h2>Engagements</h2>
+        </div>
+        <a class="button primary" href="contact.html?category=engagement">Inquire</a>
+      </div>
+
+      <div class="package-stack">
+        <a class="package-row" href="contact.html?package=engagement-experience">
+          <div class="package-main">
+            <h3>Engagement Experience</h3>
+            <p>1.5 hours</p>
+            <span>45 images</span>
+          </div>
+          <div class="package-price">$575</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Milestones -->
+    <section class="pricing-block" id="milestones">
+      <div class="pricing-block-head">
+        <div>
+          <p class="pricing-kicker">Celebration Sessions</p>
+          <h2>Milestones & Celebrations</h2>
+        </div>
+        <a class="button primary" href="contact.html?category=milestones">Inquire</a>
+      </div>
+
+      <div class="package-stack">
+        <a class="package-row" href="contact.html?package=moments">
+          <div class="package-main">
+            <h3>Moments</h3>
+            <p>30 minutes</p>
+            <span>12 images</span>
+          </div>
+          <div class="package-price">$225</div>
+        </a>
+
+        <a class="package-row" href="contact.html?package=celebration-story">
+          <div class="package-main">
+            <h3>Celebration Story</h3>
+            <p>1 hour</p>
+            <span>30 images</span>
+          </div>
+          <div class="package-price">$350</div>
+        </a>
+
+        <a class="package-row" href="contact.html?package=milestone-experience">
+          <div class="package-main">
+            <h3>Milestone Experience</h3>
+            <p>Up to 2 hours</p>
+            <span>65+ images</span>
+          </div>
+          <div class="package-price">$550</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Minis -->
+    <section class="pricing-block" id="minis">
+      <div class="pricing-block-head">
+        <div>
+          <p class="pricing-kicker">Extras</p>
+          <h2>Mini Sessions & Add-Ons</h2>
+        </div>
+        <a class="button primary" href="contact.html?category=minis-addons">Inquire</a>
+      </div>
+
+      <div class="package-stack">
+        <a class="package-row" href="contact.html?package=mini-session">
+          <div class="package-main">
+            <h3>Mini Session</h3>
+            <p>15 minutes</p>
+            <span>5 images</span>
+          </div>
+          <div class="package-price">$75</div>
+        </a>
+
+        <a class="package-row" href="contact.html?package=additional-images">
+          <div class="package-main">
+            <h3>Additional Images</h3>
+            <p>Per image</p>
+            <span>Add extra edited images to your gallery.</span>
+          </div>
+          <div class="package-price">$15</div>
+        </a>
+
+        <a class="package-row" href="contact.html?package=rush-delivery">
+          <div class="package-main">
+            <h3>Rush Delivery</h3>
+            <p>When available</p>
+            <span>Faster turnaround if scheduling allows.</span>
+          </div>
+          <div class="package-price">$75</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- Travel -->
+    <section class="pricing-block" id="travel">
+      <div class="pricing-block-head">
+        <div>
+          <p class="pricing-kicker">Location Details</p>
+          <h2>Travel</h2>
+        </div>
+        <a class="button primary" href="contact.html?category=travel">Ask About Travel</a>
+      </div>
+
+      <div class="package-stack">
+        <a class="package-row" href="contact.html?package=travel-quote">
+          <div class="package-main">
+            <h3>Custom Travel Quote</h3>
+            <p>Outside Linden, TN</p>
+            <span>Travel fees may apply outside Linden, TN. Your total will always be quoted clearly before booking.</span>
+          </div>
+          <div class="package-price">Quote</div>
+        </a>
+      </div>
+    </section>
+
+    <!-- CTA -->
+    <div class="pricing-cta card soft">
+      <div>
+        <h2>Not sure what fits best?</h2>
+        <p>Tell me your session type, vibe, and ideal date — I’ll help you choose the best option.</p>
+      </div>
+
+      <div class="cta-row">
+        <a class="button primary" href="contact.html">Ask / Book</a>
+        <a class="button" href="portfolio.html">View Portfolio</a>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<!-- ================= FOOTER ================= -->
+<footer class="footer">
+  <div class="container footer-grid">
+    <div>
+      <strong>Enchanted Rose Photography</strong>
+      <p>Linden, TN • Moody • Romantic • Cinematic</p>
+    </div>
+
+    <div class="socials">
+      <a class="pill" href="https://www.facebook.com/profile.php?id=61585593907864" target="_blank" rel="noreferrer">Facebook</a>
+      <a class="pill" href="policies.html">Policies</a>
+      <a class="pill" href="contact.html">Contact</a>
+    </div>
+  </div>
+</footer>
+
+<a class="fab-book" href="contact.html">Book Now</a>
+
+<script src="assets/js/site.js"></script>
+</body>
+</html>
